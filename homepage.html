@@ -11,23 +11,25 @@
     <title>Homepage</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="user.css">
+
   </head>
   <body class="container">
     <!--Start of header-->
     <header class="blog-header py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
+        <!--User's Account modal button-->
         <div class="col-4 pt-1">
           <a class="account" href="#"
-            ><img
-              src="abstract-user-flat-4.png"
-              style="height: 50px; width: 50px; margin-left: 12px"
-            /><br />
-            My Account</a
+          <a class="account" href="#" data-toggle="modal" data-target="#staticBackdrop" 
+            ><img src="abstract-user-flat-4.png" style="height: 50px; width: 50px; margin-left: 12px"alt="profile photo" id="profile"/>
+               <br />
+            My Account</a>
           ><br />
         </div>
         <div class="col-4 text-center">
           <a class="blog-header-logo text-dark" href="homepage.html"
-            ><img src="images/logo.png" style="height: auto"
+            ><img src="images/logo.png" style="width: 200px; height: auto"
           /></a>
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
@@ -78,7 +80,7 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Fruits and Vegetables</a>
+              <a class="dropdown-item" href="fruits_vegetables.html">Fruits and Vegetables</a>
               <a class="dropdown-item" href="#">Snacks</a>
               <a class="dropdown-item" href="#">Instant Food</a>
               <a class="dropdown-item" href="#">Stationeries</a>
@@ -308,6 +310,7 @@
             </ul>
           </div>
           <!--Grid column-->
+<<<<<<< HEAD
 
           <!--Grid column-->
           <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
@@ -350,6 +353,50 @@
       </div>
       <!-- Grid container -->
 
+=======
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-0 text-dark">Social Media</h5>
+
+            <ul class="list-unstyled">
+              <li>
+                <a href="#!" class="text-dark mb-5"
+                  ><img
+                    src="images/Facebook-logo.png"
+                    style="width: auto; height: 30px"
+                /></a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark mb-5"
+                  ><img
+                    src="images/ig logo.png"
+                    style="width: auto; height: 30px"
+                /></a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark mb-5"
+                  ><img
+                    src="images/twitter-logo-4.png"
+                    style="width: auto; height: 30px"
+                /></a>
+              </li>
+              <li>
+                <a href="#!" class="text-dark"
+                  ><img
+                    src="images/tiktok logo.png"
+                    style="width: auto; height: 30px"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+
+>>>>>>> 3a26acf7f033f02d2f7414eb889b024ea97abc32
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
@@ -370,5 +417,62 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <!-- User's Account Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title title" id="UserProfileLabel">My Account</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
+              <div class="container">
+                  <div class="row">
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">First Name</p>
+                  <h5 class="text-muted" id="FName">Maria</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Last Name</p>
+                  <h5 class="text-muted" id="LName">Mariam</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Username</p>
+                  <h5 class="text-muted" id="Username">@marry</h5>
+              </div>
+              <div class="col-sm-12">
+                  <p class="form-label font-weight-bold">Email</p>
+                  <h5 class="text-muted" id="LName">Mariamaria2@gmail.com</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Gender</p>
+                  <h5 class="text-muted" id="Gender">Female</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Phone Number</p>
+                  <h5 class="text-muted" id="PNumber">+6012345789</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Birthday</p>
+                  <h5 class="text-muted" id="Birthday">01 / 01 / 01</h5>
+              </div>
+              <div class="col-sm-12">
+                  <p class="form-label font-weight-bold">Address</p>
+                  <h5 class="text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</h5>
+              </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="setting.html">
+                <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
+          </div>
+        </div>
+      </div>
+      </div> 
+    </div>
   </body>
 </html>
