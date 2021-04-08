@@ -65,7 +65,38 @@ var instantFood_prices = [
     'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
 ]
 
+var snacks_imgs = [
+    'images/products/Snacks/apolloWaferCream.png',
+    'images/products/Snacks/bigBangGrilledSeaweed.png',
+    'images/products/Snacks/cheetosFlamingHot.png',
+    'images/products/Snacks/chokiChoki.png',
+    'images/products/Snacks/dahfaDriedFishFillet.png',
+    'images/products/Snacks/dingDang.png',
+    'images/products/Snacks/hacks.png',
+    'images/products/Snacks/hawFlakes.png',
+    'images/products/Snacks/lemonTablet.png',
+    'images/products/Snacks/mameeMonsterSnekMi.png',
+    'images/products/Snacks/murukawaBubblegum.png',
+    'images/products/Snacks/murukuIkan.png',
+    'images/products/Snacks/sugus.png',
+    'images/products/Snacks/superRing.png',
+    'images/products/Snacks/wantWantRiceCake.jpg',
+    'images/products/Snacks/whiteRabbitCandy.png',
+]
 
+var snacks_names = [
+    'Wafer Cream', 'Grilled Seaweed', 'Cheetos', 'Choki Choki',
+    'Dried Fish Fillet', 'Ding Dang', 'HACKS candy', 'Haw Flakes',
+    'Lemon Tablet', 'Snek Mi', 'Bubble Gum', 'Muruku Ikan', 
+    'Sugus','Super Ring', 'Rice Cake', 'White Rabbit Candy'
+]
+
+var snacks_prices = [
+    'RM 5.90', 'RM 10.90', 'RM 12.99', 'RM 9.99',
+    'RM 7.99', 'RM 2.00', 'RM 3.99', 'RM 4.99',
+    'RM 6.99', 'RM 4.95', 'RM 6.99', 'RM 8.95',
+    'RM 2.99', 'RM 2.99', 'RM 8.99', 'RM 9.99',
+]
 
 var title = document.getElementById("page_title").textContent;
 
@@ -101,6 +132,24 @@ else if (title == 'Instant Food'){
 
             var price = "prd_price" + m;
             document.getElementById(price).innerText = instantFood_prices[i];
+            m++;
+          }
+    }
+}
+else if (title == 'Snacks'){
+    window.onload = function(){
+
+        var m = 1;
+        for (i = 0; i < 16; i++) {
+
+            var img = "prdimg" + m;
+            document.getElementById(img).src = snacks_imgs[i];
+
+            var name = "prd_name" + m;
+            document.getElementById(name).innerText = snacks_names[i];
+
+            var price = "prd_price" + m;
+            document.getElementById(price).innerText = snacks_prices[i];
             m++;
           }
     }
