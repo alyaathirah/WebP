@@ -28,13 +28,44 @@ var vegFruit_prices =[
     'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
     '10.99/kg', 'RM 10.99/packet', 'RM 5.99/kg', 'RM 9.99/kg',
     'RM 10.99/kg', 'RM 10.99/kg', 'RM 12.99/kg', 'RM 9.99/kg',
-    'RM 10.99/packet', 'RM 10.99/kg', 'RM 12.99/kg', 'RM 9.99kg',
+    'RM 10.99/packet', 'RM 10.99/kg', 'RM 12.99/kg', 'RM 9.99/kg',
 
 ]
 
 var instantFood_imgs = [
-    
+    'images/products/Instant Food/ayamasBall.png',
+    'images/products/Instant Food/ayamasDrumet.png',
+    'images/products/Instant Food/ayamasNugget.png',
+    'images/products/Instant Food/ayamasSosej.png',
+    'images/products/Instant Food/campbellChickenBox.png',
+    'images/products/Instant Food/campbellChickenCan.png',
+    'images/products/Instant Food/campbellOriBox.png',
+    'images/products/Instant Food/campbellOriCan.png',
+    'images/products/Instant Food/maggiAyam.png',
+    'images/products/Instant Food/maggiCup.png',
+    'images/products/Instant Food/maggiTomyam.png',
+    'images/products/Instant Food/ramenDouble.png',
+    'images/products/Instant Food/samyangCarbo.png',
+    'images/products/Instant Food/samyangCheese.png',
+    'images/products/Instant Food/samyangChicken.png',
+    'images/products/Instant Food/samyangOri.png',
 ]
+
+var instantFood_names = [
+    'Ayamas Ball', 'Ayamas Drumet', 'Ayamas Nugget', 'Ayamas Sosej',
+    'Campbell Chicken Box', 'Campbell Chicken Can', 'Campbell Ori Box', 'Campbell Ori Can',
+    'Maggi Ayam', 'Assorted Maggi Cup', 'Maggi TomYam', 'Ramen Double',
+    'Samyang Carbonara', 'Samyang Cheese', 'Samyang Chicken', 'Samyang Original',
+]
+
+var instantFood_prices = [
+    'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
+    '10.99', 'RM 10.99', 'RM 5.99', 'RM 9.99',
+    'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
+    'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
+]
+
+
 
 var title = document.getElementById("page_title").textContent;
 
@@ -52,6 +83,24 @@ if (title == 'Fruits and Vegetables'){
 
             var price = "prd_price" + m;
             document.getElementById(price).innerText = vegFruit_prices[i];
+            m++;
+          }
+    }
+}
+else if (title == 'Instant Food'){
+    window.onload = function(){
+
+        var m = 1;
+        for (i = 0; i < 16; i++) {
+
+            var img = "prdimg" + m;
+            document.getElementById(img).src = instantFood_imgs[i];
+
+            var name = "prd_name" + m;
+            document.getElementById(name).innerText = instantFood_names[i];
+
+            var price = "prd_price" + m;
+            document.getElementById(price).innerText = instantFood_prices[i];
             m++;
           }
     }
