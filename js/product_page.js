@@ -44,24 +44,24 @@ var instantFood_imgs = [
     'images/products/Instant Food/maggiAyam.png',
     'images/products/Instant Food/maggiCup.png',
     'images/products/Instant Food/maggiTomyam.png',
+    'images/products/Instant Food/maggi.png',
     'images/products/Instant Food/ramenDouble.png',
     'images/products/Instant Food/samyangCarbo.png',
     'images/products/Instant Food/samyangCheese.png',
-    'images/products/Instant Food/samyangChicken.png',
     'images/products/Instant Food/samyangOri.png',
 ]
 
 var instantFood_names = [
     'Ayamas Ball', 'Ayamas Drumet', 'Ayamas Nugget', 'Ayamas Sosej',
     'Campbell Chicken Box', 'Campbell Chicken Can', 'Campbell Ori Box', 'Campbell Ori Can',
-    'Maggi Ayam', 'Assorted Maggi Cup', 'Maggi TomYam', 'Ramen Double',
-    'Samyang Carbonara', 'Samyang Cheese', 'Samyang Chicken', 'Samyang Original',
+    'Maggi Ayam', 'Assorted Maggi Cup', 'Maggi TomYam', 'Maggi Kari', 'Ramen Double',
+    'Samyang Carbonara', 'Samyang Cheese', 'Samyang Original',
 ]
 
 var instantFood_prices = [
     'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
     '10.99', 'RM 10.99', 'RM 5.99', 'RM 9.99',
-    'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
+    'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 5.95',
     'RM 10.99', 'RM 10.99', 'RM 12.99', 'RM 9.99',
 ]
 
