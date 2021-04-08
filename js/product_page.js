@@ -32,6 +32,10 @@ var vegFruit_prices =[
 
 ]
 
+var instantFood_imgs = [
+    
+]
+
 var title = document.getElementById("page_title").textContent;
 
 if (title == 'Fruits and Vegetables'){
