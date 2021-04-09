@@ -162,12 +162,9 @@ function clickfunc(){
     localStorage.setItem("name_storage", name);
     var price = document.getElementById('prd_price1').textContent;
     localStorage.setItem("price_storage", price);
-    var image = document.querySelector('prdimg1').src;
+    var image = document.getElementById('prdimg1').src;
     localStorage.setItem("image_storage", image);
-    alert(image)
-;
 }
-
 
 
 
