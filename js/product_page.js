@@ -98,6 +98,8 @@ var snacks_prices = [
     'RM 2.99', 'RM 2.99', 'RM 8.99', 'RM 9.99',
 ]
 
+
+/*loading product images*/
 var title = document.getElementById("page_title").textContent;
 
 if (title == 'Fruits and Vegetables'){
@@ -154,6 +156,21 @@ else if (title == 'Snacks'){
           }
     }
 }
+
+function clickfunc(){
+    var name = document.getElementById('prd_name1').textContent;
+    localStorage.setItem("name_storage", name);
+    var price = document.getElementById('prd_price1').textContent;
+    localStorage.setItem("price_storage", price);
+    var image = document.querySelector('prdimg1').src;
+    localStorage.setItem("image_storage", image);
+    alert(image)
+;
+}
+
+
+
+
 
 
 
