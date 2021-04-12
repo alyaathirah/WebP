@@ -5039,7 +5039,7 @@ input[type="button"].btn-block {
 }
 .navbar .navbar-toggler {
   color: var(--secondary);
-  border-color: var(--secondary);
+  border-color: #fff;
 }
 
 .navbar-light .navbar-toggler-icon {
