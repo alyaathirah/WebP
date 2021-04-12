@@ -49,8 +49,76 @@
     -moz-appearance: none;
     margin: 0; }
     
-    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .minus:focus,
    .quantity.buttons_added .plus:focus {
     outline: none; }
+
+    /*About Us - Header*/
+
+.about_us {
+    background-color: black;
+    background-image: url(../images/title.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 3em;
+}
+
+.title-about_us {
+    font-weight: 800;
+    font-size: 2.25rem;
+}
+
+.about_us--mask {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+}
+
+.visionandmision {
+    padding: 2em 1em 1em 1em;
+    color: black;
+    text-align: center;
+}
+
+.vision,
+.mision {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.subtitle--vision 
+.subtitle--mision {
+    font-weight: 700;
+    font: serif;
+}
+
+@media (min-width: 800px){
+    .visionandmision,
+    .address {
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .vision + .mision {
+        margin-left: 2em;
+    }
+}
+
+    /*About Us - Map*/
+.map{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+}
+    
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
    
    
