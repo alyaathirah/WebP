@@ -1,12 +1,24 @@
 .profile{
     max-width: 800px;
-    margin: 50px auto;
+    margin: 90px auto;
     position: relative;
-    box-shadow: 0 10px 30px 0px rgb(65, 10, 10);
+    /*box-shadow: 0 10px 30px 0px rgb(65, 10, 10);*/
     padding: 20px;
-    
 }
-
+.profile1{
+    max-width: auto;
+    margin: auto;
+    position: relative;
+    padding: 20px;
+    background: url("https://pa1.narvii.com/6858/e26e8ab2dafa669b84a7630303386edc667695a1_hq.gif");
+}
+/*
+.profile{
+    max-width: auto;
+    margin: auto;
+    position: relative;
+    padding: 30px;
+}*/
 .title{
     text-transform:capitalize;
     text-align: center;
@@ -30,6 +42,8 @@
     overflow: hidden;
 }
 /*setting*/
+
+
 .navwrapper1{
     height: 50px;
     width: 50px;
