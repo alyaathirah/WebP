@@ -157,14 +157,7 @@ else if (title == 'Snacks'){
     }
 }
 
-function clickfunc(){
-    var name = document.getElementById('prd_name1').textContent;
-    localStorage.setItem("name_storage", name);
-    var price = document.getElementById('prd_price1').textContent;
-    localStorage.setItem("price_storage", price);
-    var image = document.getElementById('prdimg1').src;
-    localStorage.setItem("image_storage", image);
-}
+
 
 
 

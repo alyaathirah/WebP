@@ -1,59 +1,96 @@
 
 /* -- Product Description -- */
+.product_details{
+    padding: 3em .5em .5em .5em;
+    color: black;
+    text-align: left;
+}
+
+.product_details-img {
+    max-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+.product_details-desc {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 3em;
+}
+
+@media (min-width: 800px){
+    .product_details{
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product_details-img,
+    .product_details-desc {
+        margin-left: 1em;
+    }
+}
+
+.localOrImport {
+    color: darkslategray;
+}
+
+
 /* -- quantity box -- */
 
 .quantity {
     display: inline-block; }
    
-   .quantity .input-text.qty {
+.quantity .input-text.qty {
     width: 35px;
     height: 39px;
     padding: 0 5px;
     text-align: center;
     background-color: transparent;
     border: 1px solid #efefef;
-   }
+}
    
-   .quantity.buttons_added {
+.quantity.buttons_added {
     text-align: left;
     position: relative;
     white-space: nowrap;
     vertical-align: top; }
    
-   .quantity.buttons_added input {
+.quantity.buttons_added input {
     display: inline-block;
     margin: 0;
     vertical-align: top;
     box-shadow: none;
    }
    
-   .quantity.buttons_added .minus,
-   .quantity.buttons_added .plus {
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
     padding: 7px 10px 8px;
     height: 41px;
     background-color: #ffffff;
     border: 1px solid #efefef;
     cursor:pointer;}
    
-   .quantity.buttons_added .minus {
+.quantity.buttons_added .minus {
     border-right: 0; }
    
-   .quantity.buttons_added .plus {
+.quantity.buttons_added .plus {
     border-left: 0; }
    
-   .quantity.buttons_added .minus:hover,
-   .quantity.buttons_added .plus:hover {
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
     background: #eeeeee; }
    
-   .quantity input::-webkit-outer-spin-button,
-   .quantity input::-webkit-inner-spin-button {
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     -moz-appearance: none;
     margin: 0; }
     
-   .quantity.buttons_added .minus:focus,
-   .quantity.buttons_added .plus:focus {
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
     outline: none; }
+
 
     /*About Us - Header*/
 
@@ -159,17 +196,18 @@ img{
 .product{
     margin: .5rem;
     position: relative;
-    box-shadow: 0.25em 0.25em 0.75em rgba(0,0,0,.15),;
+    box-shadow: .5px .5px 5px 1px rgb(230, 228, 228);
+    border-radius: .5em;
 }
 
 .product-content{
-    background: var(--gray);
+    background: white;
     padding: 1rem 0.5rem 1rem 0.5rem;
     cursor: pointer;
 }
 
 .product-img{
-    background: var(--gray);
+    background: white;
     width: 170px;
     height: 170px;
     margin: 0 auto;
