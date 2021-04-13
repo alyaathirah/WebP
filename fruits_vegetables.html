@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"><!--alya-->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,14 +11,13 @@
     <title id="page_title">Fruits and Vegetables</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
-    <script type="text/javascript" src="js/product_page.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="user.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/product_page.js"></script>
   </head>
-
   <body class="container">
-     <!--Start of header-->
-     <header class="blog-header py-3">
+    <!--Start of header-->
+    <header class="blog-header py-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <!--User's Account modal button-->
         <div class="col-4 pt-1">
@@ -49,20 +48,13 @@
     </header>
     <!--End of header-->
     <!--Start of Navigation Bar-->
-    <nav class="navbar sticky-top navbar-expand-lg" style="margin-top: -1px">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="homepage.html"
               >Home <span class="sr-only">(current)</span></a
@@ -81,7 +73,9 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Fruits and Vegetables</a>
+              <a class="dropdown-item" href="fruits_vegetables.html"
+                >Fruits and Vegetables</a
+              >
               <a class="dropdown-item" href="snacks.html">Snacks</a>
               <a class="dropdown-item" href="instant_food.html">Instant Food</a>
               <a class="dropdown-item" href="#">Stationeries</a>
@@ -94,407 +88,378 @@
             <a class="nav-link" href="about_us.html">About Us</a>
           </li>
         </ul>
+        
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search..."
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
-      </form>
     </nav>
     <!--End of Navigation Bar-->
     <!--Start of Main-->
     <main class="container">
-      <h2 style="color: black; font: 21 em sans-serif;" class="pb-4 pt-4">Fruits and Vegetables</h2>
 
-      <div class="row md-0">
-
-        <div class="col-md-3">
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
-            <div class="col-auto d-none d-lg-block">
-              <img id="prdimg1" style="width: 100%; height: 250px" />
-            </div>
-            <div class="price col p-4 d-flex flex-column position-static">
-              <h3 id="prd_name1" class="mb-0"></h3>
-              <div id="prd_price1" class="mb-1"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a id="link" href="product_desc.html" onclick='clickfunc()' class="stretched-link">View Item</a>
-                </div>
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">Add to List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
-            <div class="col-auto d-none d-lg-block">
-              <img id="prdimg2" style="width: 100%; height: 250px" />
-            </div>
-            <div class="price col p-4 d-flex flex-column position-static">
-              <h3 id="prd_name2" class="mb-0"></h3>
-              <div id="prd_price2" class="mb-1"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">View Item</a>
-                </div>
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">Add to List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div
-            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            style="background-color: white"
-          >
-            <div class="col-auto d-none d-lg-block">
-              <img id="prdimg3" style="width: 100%; height: 250px" />
-            </div>
-            <div class="price col p-4 d-flex flex-column position-static">
-              <h3 id="prd_name3" class="mb-0"></h3>
-              <div id="prd_price3" class="mb-1"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">View Item</a>
-                </div>
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">Add to List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div
-            class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-            style="background-color: white">
-            <div class="col-auto d-none d-lg-block">
-              <img id="prdimg4" style="width: 100%; height:250px" />
-            </div>
-            <div class="price col p-4 d-flex flex-column position-static">
-              <h3 id="prd_name4" class="mb-0"></h3>
-              <div id="prd_price4" class="mb-1"></div>
-              <div class="row">
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">View Item</a>
-                </div>
-                <div class="col-md-6">
-                  <a href="#" class="stretched-link">Add to List</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        </div>
-
-        <div class="row md-0">
-
-            <div class="col-md-3">
-              <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
-                <div class="col-auto d-none d-lg-block">
-                  <img id="prdimg5" style="width: 100%; height: 250px" />
-                </div>
-                <div class="price col p-4 d-flex flex-column position-static">
-                  <h3 id="prd_name5" class="mb-0"></h3>
-                  <div id="prd_price5" class="mb-1"></div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">View Item</a>
-                    </div>
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">Add to List</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-3">
-              <div
-                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                style="background-color: white"
-              >
-                <div class="col-auto d-none d-lg-block">
-                  <img id="prdimg6" style="width: 100%; height: 250px" />
-                </div>
-                <div class="price col p-4 d-flex flex-column position-static">
-                  <h3 id="prd_name6" class="mb-0"></h3>
-                  <div id="prd_price6" class="mb-1"></div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">View Item</a>
-                    </div>
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">Add to List</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-3">
-              <div
-                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                style="background-color: white"
-              >
-                <div class="col-auto d-none d-lg-block">
-                  <img id="prdimg7" style="width: 100%; height: 250px" />
-                </div>
-                <div class="price col p-4 d-flex flex-column position-static">
-                  <h3 id="prd_name7" class="mb-0"></h3>
-                  <div id="prd_price7" class="mb-1"></div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">View Item</a>
-                    </div>
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">Add to List</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col-md-3">
-              <div
-                class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                style="background-color: white">
-                <div class="col-auto d-none d-lg-block">
-                  <img id="prdimg8" style="width: 100%; height:250px" />
-                </div>
-                <div class="price col p-4 d-flex flex-column position-static">
-                  <h3 id="prd_name8" class="mb-0"></h3>
-                  <div id="prd_price8" class="mb-1"></div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">View Item</a>
-                    </div>
-                    <div class="col-md-6">
-                      <a href="#" class="stretched-link">Add to List</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            </div>
-
-            <div class="row md-0">
-
-                <div class="col-md-3">
-                  <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
-                    <div class="col-auto d-none d-lg-block">
-                      <img id="prdimg9" style="width: 100%; height: 250px" />
-                    </div>
-                    <div class="price col p-4 d-flex flex-column position-static">
-                      <h3 id="prd_name9" class="mb-0"></h3>
-                      <div id="prd_price9" class="mb-1"></div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">View Item</a>
+        <div class="products">
+            <h2 class="title-veg_fruit">Fruits and Vegetables</h2>
+            <div class="container1">
+                <div class = "product-items">
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg1" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
                         </div>
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">Add to List</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
         
-                <div class="col-md-3">
-                  <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                    style="background-color: white"
-                  >
-                    <div class="col-auto d-none d-lg-block">
-                      <img id="prdimg10" style="width: 100%; height: 250px" />
-                    </div>
-                    <div class="price col p-4 d-flex flex-column position-static">
-                      <h3 id="prd_name10" class="mb-0"></h3>
-                      <div id="prd_price10" class="mb-1"></div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">View Item</a>
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name1" class = "product-name"></a>
+                            <p id="prd_price1" class = "product-price"></p>
                         </div>
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">Add to List</a>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg2" alt = "apple">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name2" class = "product-name"></a>
+                            <p id="prd_price2" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg3" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name3" class = "product-name"></a>
+                            <p id="prd_price3" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg4" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name4" class = "product-name"></a>
+                            <p id="prd_price4" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg5" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name5" class = "product-name"></a>
+                            <p id="prd_price5" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg6" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name6" class = "product-name"></a>
+                            <p id="prd_price6" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg7" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name7" class = "product-name"></a>
+                            <p id="prd_price7" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg8" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name8" class = "product-name"></a>
+                            <p id="prd_price8" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg9" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name9" class = "product-name"></a>
+                            <p id="prd_price9" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg10" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name10" class = "product-name"></a>
+                            <p id="prd_price10" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg11" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name11" class = "product-name"></a>
+                            <p id="prd_price11" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->  
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg12" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name12" class = "product-name"></a>
+                            <p id="prd_price12" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg13" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name13" class = "product-name"></a>
+                            <p id="prd_price13" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg14" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name14" class = "product-name"></a>
+                            <p id="prd_price14" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg15" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name15" class = "product-name"></a>
+                            <p id="prd_price15" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->
+                    <!-- single product -->
+                    <div class = "product">
+                        <div class = "product-content">
+                            <div class = "product-img">
+                                <img id="prdimg16" alt = "product image">
+                            </div>
+                            <div class = "product-btns">
+                                <button type = "button" class = "btn-cart"> add to list
+                                    <span><i class = "fas fa-plus"></i></span>
+                                </button>
+                                <button type = "button" class = "btn-buy"> view now
+                                    <span><i class = "fas fa-shopping-cart"></i></span>
+                                </button>
+                            </div>
+                        </div>
+        
+                        <div class = "product-info">
+                            <a href = "#" id="prd_name16" class = "product-name"></a>
+                            <p id="prd_price16" class = "product-price"></p>
+                        </div>
+                    </div>
+                    <!-- end of single product -->                  
                 </div>
-        
-                <div class="col-md-3">
-                  <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                    style="background-color: white"
-                  >
-                    <div class="col-auto d-none d-lg-block">
-                      <img id="prdimg11" style="width: 100%; height: 250px" />
-                    </div>
-                    <div class="price col p-4 d-flex flex-column position-static">
-                      <h3 id="prd_name11" class="mb-0"></h3>
-                      <div id="prd_price11" class="mb-1"></div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">View Item</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">Add to List</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                <div class="col-md-3">
-                  <div
-                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                    style="background-color: white">
-                    <div class="col-auto d-none d-lg-block">
-                      <img id="prdimg12" style="width: 100%; height:250px" />
-                    </div>
-                    <div class="price col p-4 d-flex flex-column position-static">
-                      <h3 id="prd_name12" class="mb-0"></h3>
-                      <div id="prd_price12" class="mb-1"></div>
-                      <div class="row">
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">View Item</a>
-                        </div>
-                        <div class="col-md-6">
-                          <a href="#" class="stretched-link">Add to List</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-        
-                </div>
-        
-                <div class="row md-0">
-        
-                    <div class="col-md-3">
-                      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
-                        <div class="col-auto d-none d-lg-block">
-                          <img id="prdimg13" style="width: 100%; height: 250px" />
-                        </div>
-                        <div class="price col p-4 d-flex flex-column position-static">
-                          <h3 id="prd_name13" class="mb-0"></h3>
-                          <div id="prd_price13" class="mb-1"></div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">View Item</a>
-                            </div>
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">Add to List</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="col-md-3">
-                      <div
-                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                        style="background-color: white"
-                      >
-                        <div class="col-auto d-none d-lg-block">
-                          <img id="prdimg14" style="width: 100%; height: 250px" />
-                        </div>
-                        <div class="price col p-4 d-flex flex-column position-static">
-                          <h3 id="prd_name14" class="mb-0"></h3>
-                          <div id="prd_price14" class="mb-1"></div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">View Item</a>
-                            </div>
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">Add to List</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="col-md-3">
-                      <div
-                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                        style="background-color: white"
-                      >
-                        <div class="col-auto d-none d-lg-block">
-                          <img id="prdimg15" style="width: 100%; height: 250px" />
-                        </div>
-                        <div class="price col p-4 d-flex flex-column position-static">
-                          <h3 id="prd_name15" class="mb-0"></h3>
-                          <div id="prd_price15" class="mb-1"></div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">View Item</a>
-                            </div>
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">Add to List</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
-                    <div class="col-md-3">
-                      <div
-                        class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
-                        style="background-color: white">
-                        <div class="col-auto d-none d-lg-block">
-                          <img id="prdimg16" style="width: 100%; height:250px" />
-                        </div>
-                        <div class="price col p-4 d-flex flex-column position-static">
-                          <h3 id="prd_name16" class="mb-0"></h3>
-                          <div id="prd_price16" class="mb-1"></div>
-                          <div class="row">
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">View Item</a>
-                            </div>
-                            <div class="col-md-6">
-                              <a href="#" class="stretched-link">Add to List</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-            
-                    </div>
-
-      </div>
+            </div>
+        </div>        
     </main>
     <!--End of Main-->
-
-    <!--Pagination-->
-    <nav aria-label="Page navigation example" style="padding: 10px;">
-        <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1">Prev</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item disabled">
-            <a class="page-link" href="#">Next</a>
-          </li>
-        </ul>
-      </nav>
-      <!--Enf of Pagination-->
-
     <!--Start of Footer-->
     <!-- Footer -->
     <footer class="text-center text-lg-start">
@@ -521,7 +486,7 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-dark">Call Us</a>
+                <a class="text-dark">Call Us: 014-tekan2 x dpt</a>
               </li>
               <li>
                 <a href="#!" class="text-dark">Mail Us</a>
@@ -576,7 +541,6 @@
         <!--Grid row-->
       </div>
       <!-- Grid container -->
-
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
@@ -597,5 +561,62 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <!-- User's Account Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title title" id="UserProfileLabel">My Account</h6>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
+              <div class="container">
+                  <div class="row">
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">First Name</p>
+                  <h5 class="text-muted" id="FName">Maria</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Last Name</p>
+                  <h5 class="text-muted" id="LName">Mariam</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Username</p>
+                  <h5 class="text-muted" id="Username">@marry</h5>
+              </div>
+              <div class="col-sm-12">
+                  <p class="form-label font-weight-bold">Email</p>
+                  <h5 class="text-muted" id="LName">Mariamaria2@gmail.com</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Gender</p>
+                  <h5 class="text-muted" id="Gender">Female</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Phone Number</p>
+                  <h5 class="text-muted" id="PNumber">+6012345789</h5>
+              </div>
+              <div class="col-sm-4">
+                  <p class="form-label font-weight-bold">Birthday</p>
+                  <h5 class="text-muted" id="Birthday">01 / 01 / 01</h5>
+              </div>
+              <div class="col-sm-12">
+                  <p class="form-label font-weight-bold">Address</p>
+                  <h5 class="text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</h5>
+              </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <a href="setting.html">
+                <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
+          </div>
+        </div>
+      </div>
+      </div> 
+    </div>
   </body>
 </html>
