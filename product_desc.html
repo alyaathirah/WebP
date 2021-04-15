@@ -124,24 +124,32 @@
                     <h5 id="product_price" class="" style="color: black;"></h5>
                     <p id="description" style="color: black;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
                         doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit 
-                        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem 
-                        sequi nesciunt. </p>
+                        architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit </p>
 
                         <div class="product_detail">
-                          <p id="localOrImport">Import</p>
-                          <h6 class="product_qty">Quantity</h6>
-                          <p class="product__qty" id="product_qty">50 units</p>
-                          <h6 class="product_weight">Weight</h6>
-                          <p class="product_weight1" id="product_weight">0.5 kg</p>
-                        </div>                      
-                        
-                        <div class="quantity buttons_added pb-2">
-                            <input type="button" value="-" class="minus">
-                            <input id="quantity" type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
-                            <input type="button" value="+" class="plus">
-                        </div>
-                        <br>
+
+                          <div class="row">
+                            <div class="col"><p id="localOrImport">Import</p></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><p class="product_qty" id="product_qty">Quantity: 50 units</p></div>
+                            <div class="col"><p class="product_weight1" id="product_weight">Weight: 0.5 kg</p></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><p class="exp_date" id="exp_date">Expiry Date: 12/5/2021</p></div>
+                          </div>
+                          <div class="row">
+                            <div class="col"><div class="quantity buttons_added pb-2">
+                              <input type="button" value="-" class="minus">
+                              <input id="quantity" type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                              <input type="button" value="+" class="plus">
+                            </div>
+                          </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-3"><p class="stock">Stock: 100</p></div>
+                          </div>
+                        </div>  
                     <button  type="button" class="btn btn-light">Add to List</button>
                 </div>
                     

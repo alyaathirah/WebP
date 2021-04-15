@@ -31,10 +31,9 @@
     }
 }
 
-.localOrImport {
-    color: darkslategray;
+.product_detail {
+    margin-bottom: 0;
 }
-
 
 /* -- quantity box -- */
 
@@ -289,3 +288,4 @@ img{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
