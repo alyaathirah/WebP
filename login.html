@@ -34,12 +34,37 @@
                 <br><br>
                 <button type="logIn">Login</button>
               </form>
-              
+              <!-- Trigger/Open The Modal -->
+              <span onclick=openModal()>Sign Up</span> 
           </div>
       </div>
-        <!-- -->
-        <!-- <button onclick="myFunction()">Try it</button>  -->
-        
+
+          <!-- The Modal -->
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-box" onclick=closeWindow(window.onclick)>
+              <span class="close" onclick=closeModal()>&times;</span>
+              
+              <div class ="modal-content">
+              <p>Sign up to know our latest deals and shop our products!</p>
+              <form>
+                <br>
+                <input type="userName" placeholder="Name">
+                <br><br>
+                <input type="userEmail" placeholder="Email">
+                <br><br>
+                <input type="userPhone" placeholder="Phone Number">
+                <br><br>
+                <input type="userPassword" placeholder="Password">
+                <br><br>
+                <button id="myBtn" type="signUp">Sign Up</button>
+                <br><br>
+              </form>
+              </div>
+            </div>
+    
+          </div>        
     <!-- Footer -->
     <footer class="text-center text-lg-start">
       
