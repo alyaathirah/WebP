@@ -82,6 +82,12 @@ body{
 p{
   color:white;
 }
+
+p span{
+  text-decoration: underline;
+  color:white;
+
+}
   
 /* The Close Button */
 .close {
