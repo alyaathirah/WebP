@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #a82c21;
+  --primary: #ec5451;
   --secondary: #ffe508;
   --success: #28a745;
   --info: #17a2b8;
@@ -71,7 +71,7 @@ section {
   display: block;
 }
 header {
-  background-color: #a82c21;
+  background-color: var(--primary);
   height: 100px;
   border: #fff;
 }
@@ -92,7 +92,7 @@ body {
   line-height: 1.5;
   color: #fff;
   text-align: left;
-  background-color: #a82c21;
+  background-color: var(--primary);
 }
 main {
   background-color: #fff;
@@ -4643,7 +4643,7 @@ input[type="button"].btn-block {
   justify-content: space-between;
   margin-top: 0px;
   padding: 0.5rem 1rem;
-  background-color: #a82c21;
+  background-color: var(--primary);
 }
 
 .navbar .container,
