@@ -18,7 +18,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #ec5451;
+  --primary: #fff;
   --secondary: #ffe508;
   --success: #28a745;
   --info: #17a2b8;
@@ -78,10 +78,7 @@ header {
 .price {
   color: #000;
 }
-.account:hover {
-  color: #ffe508;
-  text-decoration: none;
-}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -192,7 +189,7 @@ sup {
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
@@ -3101,13 +3098,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #fff;
+  color: #000;
   background-color: #fff;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #ffe508;
+  background-color: #800808;
 }
 
 .btn-outline-secondary:focus,
@@ -3141,8 +3138,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-success:hover {
-  color: #000;
-  background-color: #ffe508;
+  color: #fff;
+  background-color: #800808;
 }
 
 .btn-outline-success:focus,
@@ -4550,8 +4547,8 @@ input[type="button"].btn-block {
 
 .nav-link:hover,
 .nav-link:focus {
-  text-decoration: underline;
-  color: var(--secondary);
+  background-color: #800808;
+  color: white;
 }
 
 .nav-link.disabled {
@@ -4642,7 +4639,7 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 0px;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0rem;
   background-color: var(--primary);
 }
 
