@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+    window.onload = function(){
+    localStorage.clear();
+    console.log(status)
+    }
+    </script>
 
   </head>
   <body>
@@ -25,6 +31,15 @@
           <br>
           <a class="account" href="#" data-toggle="modal" data-target="#staticBackdrop" 
             >My Account</a>
+            <script>
+            var status = localStorage.getItem("status");
+             if(status != "logged in"){
+             account = document.querySelector(".account");
+             account.setAttribute("data-toggle","''");
+             account.setAttribute("data-target","''")
+             account.setAttribute("href","login.html");
+            }
+            </script>
           <br />
         </div>
         <div class="col-4 text-center">
@@ -82,7 +97,7 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="fruits_vegetables.html"
+              <a class="dropdown-item" href="fruits_vegetables-v2.html"
                 >Fruits and Vegetables</a
               >
               <a class="dropdown-item" href="snacks.html">Snacks</a>
