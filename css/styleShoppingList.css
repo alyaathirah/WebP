@@ -185,7 +185,7 @@
   }
 
   #buttonz{
-    background-color: #bb4166f5; /* Blue background */
+    background-color: #800808; /* Blue background */
     border: none; /* Remove borders */
     color: white; /* White text */
     padding: 12px 16px; /* Some padding */
@@ -205,9 +205,11 @@
     border-bottom: 1px solid #E1E8EE;
   }
 
-  #main {
-    padding: 20px 30px;
+  #mainList {
+  padding: 20px 30px;
   }
 
- 
   
+  #secList {
+    padding-left:20px;
+    }
