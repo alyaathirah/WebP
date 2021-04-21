@@ -28,6 +28,15 @@
             ><img src="abstract-user-flat-4.png" style="height: 50px; width: 50px; margin-left: 12px"alt="profile photo" id="profile"/>
                <br />
             My Account</a>
+            <script>
+              var status = localStorage.getItem("status");
+               if(status != "logged in"){
+               account = document.querySelector(".account");
+               account.setAttribute("data-toggle","''");
+               account.setAttribute("data-target","''")
+               account.setAttribute("href","login.html");
+              }
+              </script>
           <br />
         </div>
         <div class="col-4 text-center">
@@ -84,9 +93,7 @@
               <a class="dropdown-item" href="#">Stationeries</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News and Promotions</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="about_us.html">About Us</a>
           </li>
@@ -136,7 +143,7 @@
           </div>
 
           <div class="col col-lg-2">
-            <span class="delete-btn" id = "1" onClick = "myFunction2()"></span>
+            <div class="deletebtn" id = "1" onClick = "myFunction2()"></div>
           </div>
 
         </div>
@@ -151,7 +158,7 @@
           </div>
 
           <div class="col col-lg-2">
-              <span class="delete-btn" id = "2" onClick = "myFunction2()"></span>
+              <span class="deletebtn" id = "2" onClick = "myFunction2()"></span>
           </div>
 
         </div>
@@ -216,7 +223,7 @@
 
       <div class = "col-md-1">
             <div class = "buttons">
-            <span class="delete-btn" onclick="myFunction()" id="1"></span>
+            <span class="deletebtn" onclick="myFunction()" id="1"></span>
             </div>
         </div>
 
@@ -235,11 +242,11 @@
 
         <div class = "col-md-3">
           <div class="quantity">
-            <button class="plus-btn button" type="button" name="button" onclick="plusPrice()">
+            <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn1">
               <img src="images/plus.svg" alt="" />
             </button>
             <input type="text" name="name" value="1" id = "quantity1">
-            <button class="minus-btn button" type="button" name="button" onclick="minusPrice()">
+            <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn1">
               <img src="images/minus.svg" alt="" />
             </button>
           </div>
@@ -264,7 +271,7 @@
     <div class = "item" id = "item2">
       <div class = "col-md-1">
             <div class = "buttons">
-            <span class="delete-btn" onclick="myFunction()" id ="2"></span>
+            <span class="deletebtn" onclick="myFunction()" id ="2"></span>
             </div>
         </div>
 
@@ -284,11 +291,11 @@
 
         <div class = "col-md-3">
           <div class="quantity">
-            <button class="plus-btn button" type="button" name="button" onclick="plusPrice()">
+            <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn2">
               <img src="images/plus.svg" alt="" />
             </button>
             <input type="text" name="name" value="1" id = "quantity2">
-            <button class="minus-btn button" type="button" name="button" onclick="minusPrice()">
+            <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn2">
               <img src="images/minus.svg" alt="" />
             </button>
           </div>
@@ -312,25 +319,11 @@
       <div id = "secList">
       <script>
 
-     /* window.localStorage.removeItem("passImg");
+      window.localStorage.removeItem("passImg");
       window.localStorage.removeItem("passName");
       window.localStorage.removeItem("passPrice");
       window.localStorage.removeItem("test");
       secList.removeChild(newDiv);
-
-      var test = localStorage.getItem("test");
-     /* if(test = null){
-        secList.removeChild(newDiv);
-      }*/
-    /*  if(test = 1){
-      var old = document.getElementById("item1");
-      var newDiv = old.cloneNode(true);
-      newDiv.querySelector('img').src = localStorage.getItem("passImg");
-      newDiv.querySelector('#name').innerHTML = localStorage.getItem("passName");
-      newDiv.querySelector('#price').innerHTML = localStorage.getItem("passPrice");
-      newDiv.id = "item3";
-      document.getElementById("secList").appendChild(newDiv);
-      }*/
       </script>
     </div>
 
@@ -357,17 +350,57 @@
             </div>
             <script>
               //calculate price
-            /*  var sum;
-              var p1 = parseInt(document.getElementById('price1').innerText);
-              var q1 = parseInt(document.getElementById('quantity1').value);
-              var p2 = parseInt(document.getElementById('price2').innerText);
-              var q2 = parseInt(document.getElementById('quantity2').value);
-              if(q2 == 10){
-              alert(q2);
+
+              //initial price
+              var p = [];
+              var q = [];
+              var result = 0;
+              for(var i = 1; i<10; i++){
+                  p[i] = parseInt(document.getElementById('price' + i).innerText);
+                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
+                  result = result + p[i]*(q[i]);
+                  document.getElementById("sumPrice").innerHTML = result;
               }
-              document.getElementById("sumPrice").innerHTML = sum;*/
-       
+
+              //add price
+              function addFx(elem){
+                var p = [];
+                var q = [];
+                var result = 0;
+                elem = parseInt(elem.slice(-1));
+                for(var i = 1; i<10; i++){
+                  p[i] = parseInt(document.getElementById('price' + i).innerText);
+                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
+                     if(i == elem){
+                     q[i]+=1;
+                    }
+                  result = result + p[i]*(q[i]);
+                  document.getElementById("sumPrice").innerHTML = result;
+                }
+              }   
+              //minus price
+              function minusFx(elem){
+                var p = [];
+                var q = [];
+                var result = 0;
+                elem = parseInt(elem.slice(-1));
+                for(var i = 1; i<10; i++){
+                  p[i] = parseInt(document.getElementById('price' + i).innerText);
+                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
+                     if(i == elem){
+                     q[i]-=1;
+                    }
+                  result = result + p[i]*(q[i]);
+                  document.getElementById("sumPrice").innerHTML = result;
+                }
+              }
               
+              //removeitem price
+              function removeItemCost(p,q){
+              var minus = p*q;
+              var curResult =  parseInt(document.getElementById("sumPrice").innerHTML);
+              document.getElementById("sumPrice").innerHTML = curResult - minus;
+              }
             </script>
         </div>
       </div>
@@ -583,6 +616,9 @@
       function myFunction() {
         var buttonID = "item" + event.srcElement.id;
         var myobj = document.getElementById(buttonID);
+        p= parseInt(document.getElementById('price' + event.srcElement.id).innerText);
+        q= parseInt(document.getElementById('quantity' + event.srcElement.id).value);   
+        removeItemCost(p,q);
         myobj.remove();
       }
     
@@ -618,6 +654,7 @@
         var old = document.getElementById("shoppinglist1");
         var newDiv = old.cloneNode(true);
         newDiv.id = "shoppinglist3";
+        newDiv.querySelector(".deletebtn").id = "3";
         newDiv.querySelector("#titleList").innerHTML = input;
         document.getElementById("newSL").appendChild(newDiv);
       }
