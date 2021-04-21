@@ -36,12 +36,12 @@
     padding-right: 70px;
     padding-top: 6px;
 }
-    .delete-btn {
+    .deletebtn {
       display: inline-block;
       cursor: pointer;
       width: 18px;
       height: 17px;
-      background: url("/WebP-main/WebP/images/delete-icn.svg") no-repeat center;
+      background: url("/images/delete-icn.svg") no-repeat center;
       margin-right: 20px;
   }
   
