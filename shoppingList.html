@@ -565,6 +565,13 @@
           <div class="modal-footer">
             <a href="setting.html">
                 <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
+                <a href="homepage.html" onclick="reset()">
+                  <button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+              <script>
+                function reset(){
+                  localStorage.clear();
+                }
+              </script>
           </div>
         </div>
       </div>

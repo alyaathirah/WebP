@@ -8,17 +8,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title id="page_title">Snacks</title>
+    <title id="page_title">Fruits and Vegetables</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/product_page.js"></script>
+    <script type="text/javascript" src="js/product_desc.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
   </head>
   <body class="container">
     <!--Start of header-->
     <header class="blog-header py-3">
-      <div class="row flex itemrap justify-content-between align-items-center">
+      <div class="row flex-itemrap justify-content-between align-items-center">
         <!--User's Account modal button-->
         <div class="col-4 pt-1">
           <a class="account" href="#" data-toggle="modal" data-target="#staticBackdrop" 
@@ -113,7 +115,12 @@
     <main class="container">
 
         <div class="products">
-            <h2 class="title-veg_fruit">Snacks</h2>
+            <h2 class="SearchResult" style="color: black; background-color: none;">Search Result</h2>
+            <script>
+                var query = localStorage.getItem("query");
+                var text = "Search Result: " + query;
+                document.querySelector(".SearchResult").innerHTML=text;
+            </script>
             <div class="container1">
                 <div class = "product-items">
                     <!-- single product -->
@@ -123,14 +130,12 @@
                                 <img id="prdimg1" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <a href="#">
+                                <a href="login.html">
                                     <button type = "button" class = "btn-cart"> add to list
-                                        <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
                                 <a href="product_desc.html">
                                     <button type = "button" class = "btn-buy"> view item
-                                        <span><i class = "fas fa-shopping-cart"></i></span>
                                     </button>
                                 </a>
                             </div>

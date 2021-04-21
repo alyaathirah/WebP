@@ -26,6 +26,15 @@
             ><img src="abstract-user-flat-4.png" style="height: 50px; width: 50px; margin-left: 12px"alt="profile photo" id="profile"/>
                <br />
             My Account</a>
+            <script>
+              var status = localStorage.getItem("status");
+               if(status != "logged in"){
+               account = document.querySelector(".account");
+               account.setAttribute("data-toggle","''");
+               account.setAttribute("data-target","''")
+               account.setAttribute("href","login.html");
+              }
+              </script>
           <br />
         </div>
         <div class="col-4 text-center">
@@ -87,25 +96,23 @@
               <a class="dropdown-item" href="#">Stationeries</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">News and Promotions</a>
-          </li>
+          
           <li class="nav-item">
             <a class="nav-link" href="about_us.html">About Us</a>
           </li>
         </ul>
       </div>
-      <form class="form-inline">
-        <input
-          class="form-control mr-sm-2"
-          type="search"
-          placeholder="Search..."
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-          Search
-        </button>
+      <form class="form-inline my-2 my-lg-0" action = "/search.html">
+        <input class="searchBar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="getQuery()">Search</button>
       </form>
+    </div>
+    <script>
+      function getQuery(){
+        var query = document.querySelector(".searchBar").value;
+        localStorage.setItem("query",query)
+      }
+    </script>
     </nav>
     <!--End of Navigation Bar-->
     
@@ -311,6 +318,13 @@
           <div class="modal-footer">
             <a href="setting.html">
                 <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
+                <a href="homepage.html" onclick="reset()">
+                  <button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+              <script>
+                function reset(){
+                  localStorage.clear();
+                }
+              </script>
           </div>
         </div>
       </div>
