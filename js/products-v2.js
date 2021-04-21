@@ -87,5 +87,4 @@ window.onload = function(){
         document.getElementById(prdInfo_num).appendChild(prd_price);
         m++;
     }
-                
 }
