@@ -28,7 +28,7 @@
           <br />
           <input type="userEmail" placeholder="Email" />
           <br /><br />
-          <input type="userPassword" placeholder="Password" />
+          <input type="password" placeholder="Password" />
           <br /><br />
           <button
             type="button"
@@ -39,7 +39,10 @@
           </button>
         </form>
         <!-- Trigger/Open The Modal -->
-        <p>Need an account? <span onclick="openModal()">Sign Up</span></p>
+        <p>
+          Need an account?
+          <span class="signUp" onclick="openModal()">Sign Up</span>
+        </p>
       </div>
     </div>
 
@@ -155,7 +158,7 @@
           <button
             id="myBtn"
             type="button"
-            onclick="window.location.href='homepage.html';"
+            onclick="window.alert('Sign Up Successful!'); closeModal()"
           >
             Sign Up
           </button>

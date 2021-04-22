@@ -46,12 +46,22 @@
           <a
             class="btn btn-sm btn-outline-secondary"
             href="shoppingList.html"
-            style="margin-right: 10px; color: black"
+            style="margin-right: 10px; "
             ><img
-              src="images/list.png"
-              style="width: auto; height: 50px"
-            /><br />My List</a
-          >
+            class="list"
+            src="images/list.png"
+            style="width: auto; height: 50px"
+          /><br />My List</a
+        >
+        <script>
+          var switchImg = document.querySelector(".list");
+          switchImg.addEventListener("mouseover", function(){
+            switchImg.setAttribute("src","images/listwhite.png")
+          })
+          switchImg.addEventListener("mouseout",function(){
+            switchImg.setAttribute("src","images/list.png")
+          })
+        </script>
           <a></a>
         </div>
       </div>
