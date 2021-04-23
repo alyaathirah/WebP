@@ -648,12 +648,12 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <!-- User's Account Modal -->
+    <!-- Profile Modal -->
     <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title title" id="UserProfileLabel">My Account</h6>
+            <h5 class="modal-title" id="UserProfileLabel" style="font-weight: bold; color:#bb4166f5; background: linear-gradient(to right, rgb(87, 14, 14) 30%,#8d1a3cf5 50%); -webkit-background-clip: text; -webkit-text-fill-color:transparent;">My Account</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -661,54 +661,37 @@
           <div class="modal-body">
             <div class="container-fluid">
               <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
-              <div class="container">
-                  <div class="row">
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">First Name</p>
-                  <h5 class="text-muted" id="FName">Maria</h5>
+              <div class="row" >
+              <div class="col-sm-4 label">First Name</div>
+              <div class="col-sm-4 label">Last Name</div>
+              <div class="col-sm-4 label">Username</div>
+              <div class="col-sm-4 text-muted" id="FName">Maria</div>
+              <div class="col-sm-4 text-muted" id="LName">Mariam</div>
+              <div class="col-sm-4 text-muted" id="Username">@marry</div>
+              <div class="col-sm-6 label">Email</div>
+              <div class="col-sm-6 label">Bio</div>
+              <div class="col-sm-6 text-muted" id="LName">Mariamariam@gmail.com</div>
+              <div class="col-sm-6 text-muted" id="LName">Shopping is my cardio ;)</div>
+              <div class="col-sm-4 label">Gender</div>
+              <div class="col-sm-4" style="color:maroon; font-size:15px; font-weight:bold;">Phone Number</div>
+              <div class="col-sm-4 label">Birthday</div>
+              <div class="col-sm-4 text-muted" id="Gender">Female</div>
+              <div class="col-sm-4 text-muted" id="PNumber">+6012345789</div>
+              <div class="col-sm-4 text-muted" id="Birthday">01-01-01</div>
+              <div class="col-sm-12 label">Address</div>
+              <div class="col-sm-12 text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</div>
               </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Last Name</p>
-                  <h5 class="text-muted" id="LName">Mariam</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Username</p>
-                  <h5 class="text-muted" id="Username">@marry</h5>
-              </div>
-              <div class="col-sm-12">
-                  <p class="form-label font-weight-bold">Email</p>
-                  <h5 class="text-muted" id="LName">Mariamaria2@gmail.com</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Gender</p>
-                  <h5 class="text-muted" id="Gender">Female</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Phone Number</p>
-                  <h5 class="text-muted" id="PNumber">+6012345789</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Birthday</p>
-                  <h5 class="text-muted" id="Birthday">01 / 01 / 01</h5>
-              </div>
-              <div class="col-sm-12">
-                  <p class="form-label font-weight-bold">Address</p>
-                  <h5 class="text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</h5>
-              </div>
-          </div>
-          </div>
+            </div>
           <div class="modal-footer">
-            <a href="setting.html">
-                <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
-                <a href="homepage.html" onclick="reset()">
-                    <button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
-                <script>
-                  function reset(){
-                    localStorage.clear();
-                  }
-                </script>
+            <a href="setting.html"><button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button></a>
+            <a href="homepage.html" onclick="reset()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+            <script>
+              function reset(){
+                localStorage.clear();
+              }
+            </script>
           </div>
-        </div>
+          </div>
       </div>
       </div> 
     </div>
