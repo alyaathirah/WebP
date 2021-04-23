@@ -96,7 +96,7 @@
     <main class="profile1 container">
       <section class="profile" style="background-color: white;">
         <br><h2 class="title">Update Your Account</h2>
-        <form action="#">
+        <form action="#" method="GET">
           <div class ="wrapper text center">
             <input type ="file" class="photo">
           </div>
@@ -144,7 +144,7 @@
               <input type="password" class="form-control-user" id="Password2">
             </div>
             <div class="col-sm-1">
-              <button type="button" class="submit-btn rounded-pill float-sm-end" data-bs-toggle="modal" data-bs-target="#exampleModal2" >Update</button>
+              <button type="button" class="submit-btn rounded-pill float-sm-end" onclick="check8()">Update</button>
             </div>
           </div>
           <div class="row mb-3">
@@ -486,6 +486,15 @@
         }
         else{
           $('#exampleModal3').modal('show');
+        }
+      }
+      function check8(){
+        var Password2= document.getElementById("Password2").value;
+        if( Password2 == ""){
+          $('#exampleModal4').modal('show');
+        }
+        else{
+          $('#exampleModal2').modal('show');
         }
       }
     </script>
