@@ -1,7 +1,7 @@
 .profile{
-    max-width: 800px;
-    margin: 90px auto;
-    position: relative;
+    max-width: auto;
+    margin: auto;
+    position:relative;
     box-shadow: 0 10px 30px 0px rgb(65, 10, 10);
     padding: 20px;
 }
@@ -10,15 +10,15 @@
     margin: auto;
     position: relative;
     padding: 20px;
-    background: url("https://pa1.narvii.com/6858/e26e8ab2dafa669b84a7630303386edc667695a1_hq.gif");
+    border-style: solid;
+    background-color: maroon;
+    /*background: url("https://pa1.narvii.com/6858/e26e8ab2dafa669b84a7630303386edc667695a1_hq.gif");*/
 }
-/*
-.profile{
-    max-width: auto;
-    margin: auto;
-    position: relative;
-    padding: 30px;
-}*/
+
+form{
+    margin: 2%;
+}
+
 .title{
     text-transform:capitalize;
     text-align: center;
@@ -31,56 +31,25 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-.navwrapper{
-    height: 50px;
-    width: 50px;
-    position:relative;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    background-size: 100% 100%;
-    margin: auto;
-    overflow: hidden;
-}
-/*setting*/
 
-
-.navwrapper1{
-    height: 50px;
-    width: 50px;
-    position:relative;
-    left: 40px;
-    border: 3px solid #fff;
-    border-radius: 50%;
-    background-size: 100% 100%;
-    margin: auto;
-    overflow: hidden;
-
+.label{
+    color: maroon; 
+    font-size: medium; 
+    font-weight: bold;
 }
 
 /*tester4.6*/
 .wrapper2{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     position:relative;
-    left: 25%;
+    left: 30%;
     border: 5px solid #fff;
     border-radius: 50%;
     background-size: 100% 100%;
     margin: auto;
     overflow: hidden;
 }
-
-/*TEST3
-.wrapper1{
-    height: 250px;
-    width: 250px;
-    position:relative;
-    border: 5px solid #fff;
-    border-radius: 50%;
-    background-size: 100% 100%;
-    margin: auto;
-    overflow: hidden;
-}*/
 
 .wrapper{
     height: 200px;
@@ -126,108 +95,49 @@
     font-size: 10px;
 }
 
-/*.form-control{
-    position: relative;
-    margin: 32px 0;
-}*/
 
-.form-control1{
-    color: rgb(87, 14, 14);
+.form-control-user{
+    position:relative;
     display: block;
+    color: rgb(87, 14, 14);
     width: 100%;
-    height: 36%;
+    display: block;
     border-width: 0 0 2px 0;
     border-color: #bb4166f5;
-    font-size: 20px;
-    line-height: 26px;
     font-weight: 400;
     transition: 0.2s ease;
+    font-size: 16px;
+    
 }
-/*
-.form-select {
-    color: rgb(87, 14, 14);
-    display: block;
-    width: 100%;
-    height: 35%;
-    border-width: 0 0 2px 0;
-    border-color: #bb4166f5;
-    font-size: 12px;
-    line-height: 15px;
-    font-weight: 400;
-    transition: 0.2s ease;
-}*/
-
-.alias{
-    color: rgb(87, 14, 14);
-    display: block;
-    width: 15%;
-    height: 30%;
-    border-width: 0 0 2px 0;
-    border-color: #bb4166f5;
-    font-size: 20px;
-    line-height: 16px;
-    font-weight: 400;
-    text-align: left ;
-}  
-.username{
-    color: rgb(87, 14, 14);
-    display: block;
-    width: 85%;
-    height: 30%;
-    border-width: 0 0 2px 0;
-    border-color: #bb4166f5;
-    font-size: 19px;
-    line-height: 19px;
-    font-weight: 400;
-}  
-
-
-
-/*
-input[type="password"],
-input[type="date"],
-input[type="text"],
-input[type="email"]{
-    display:block;
-    box-sizing: border-box;
-    background: none;
-    color:salmon;
-    margin-bottom: 30px;
-    padding: 4px;
-    width: 220px;
-    height: 32px;
-    border: none;
-    border-bottom: 1px solid wheat;
-    font-family: monospace;
-    font-weight: 400;
-    font-size: 15px;
-    transition: 0.2s ease;
-}*/
 
 .form-control:focus{
     outline: none;
 }
 
-.form-label{
-    position: relative;
+.col-form-label{
+    position:relative;
     bottom: 0px;
-    font-size: 16px;
-    font-weight: 400;
-    color:#bb4166f5;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px ;
+    color: maroon; /*#c4466cf5;*/
     cursor:text;
     transition: transform 0.2s ease-out;
 }
 
 .submit-btn{
-    display: inline-block;
+    
+    position:relative;    
     background-image: linear-gradient(125deg,#971006, #a72879);
     color: white;
     text-transform: capitalize ;
-    letter-spacing: 2px ;
-    font-size: 16px;
+    letter-spacing: 1px ;
+    font-size: 14px;
     padding: 8px;
     border:none;
-    width: 200px;
+    margin-top: 2%;
+    
+    
 }
 
 .setting-btn{
