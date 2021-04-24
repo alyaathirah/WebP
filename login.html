@@ -21,7 +21,7 @@
         <!-- no need to set size here -->
       </div>
       <div class="content">
-        <h2>Welcome to GroSir</h2>
+        <h2>Welcome to Gro-Sir</h2>
         <br />
         <p>Sign In</p>
 
@@ -148,18 +148,18 @@
         <p>Sign up to know our latest deals and shop our products!</p>
         <form>
           <br />
-          <input type="userName" placeholder="Name" />
+          <input id="userName" placeholder="Name" />
           <br /><br />
-          <input type="userEmail" placeholder="Email" />
+          <input id="userEmail" placeholder="Email" />
           <br /><br />
-          <input type="userPhone" placeholder="Phone Number" />
+          <input id="userPhone" placeholder="Phone Number" />
           <br /><br />
-          <input type="userPassword" placeholder="Password" />
+          <input id="userPassword" placeholder="Password" />
           <br /><br />
           <button
             id="myBtn"
             type="button"
-            onclick="window.alert('Sign Up Successful!'); closeModal()"
+            onclick="closeModal(); SignUp()"
           >
             Sign Up
           </button>
