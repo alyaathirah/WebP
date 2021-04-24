@@ -10,7 +10,7 @@ var adminPass = ["admin", "superadmin"];
 
 function Login(){
     var email = $("#email").val(); //get email value
-    var password = $("#pass").val();  //get password value
+    var password = $("#password").val();  //get password value
 
     //for admins only
     for(i=0; i<admin.length; i++){
@@ -34,8 +34,8 @@ function Login(){
 
 function SignUp(){
     var name = $("#userName").val();  //get name value
-    var email = $("#userEmail").val(); //get email value
-    var password = $("#userPassword").val();  //get password value
+    var email = $("#email").val(); //get email value
+    var password = $("#password").val();  //get password value
     var phone = $("#userPhone").val();  //get phone value
     
 
