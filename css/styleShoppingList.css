@@ -46,14 +46,14 @@
     font-weight: 400;
   }
   
-  .description span:first-child {
+  /*.description span:first-child {
     margin-bottom: 5px;
   }
   .description span:last-child {
     font-weight: 300;
     margin-top: 8px;
     color: #000000;
-  }
+  }*/
   
   .quantity {
     padding-top: 40px;
@@ -102,9 +102,9 @@
   .total-price {
     width: 83px;
     padding-top: 40px;
-    font-size: 16px;
-    color: #43484D;
-    font-weight: 300;
+    font-size: 14px;
+    color: #080808;
+    font-weight: 400;
   }
 
   .stock-avail {
@@ -138,7 +138,7 @@
     font-weight: 600;
   }
 
-  #buttonz{
+  .buttonz{
     background-color: #800808; 
     border: none; 
     color: white; 
@@ -146,7 +146,7 @@
     font-size: 16px; 
     cursor: pointer; 
   }
-  #buttonz:hover {
+  .buttonz:hover {
     background-color: rgb(212, 218, 236);
   }
 
@@ -159,7 +159,7 @@
     border-bottom: 1px solid #E1E8EE;
   }
 
-  #mainList {
+  .mainList {
   padding: 20px 30px;
   }
 
@@ -208,4 +208,11 @@
     @keyframes fadeout {
       from {bottom: 30px; opacity: 1;}
       to {bottom: 0; opacity: 0;}
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
