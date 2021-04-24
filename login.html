@@ -27,18 +27,17 @@
 
         <form>
           <br />
-          <input name="email" type="email" placeholder="Email" />
+          <input id="email" type="mail" placeholder="Email" />
           <br /><br />
-          <input name="password" type="password" placeholder="Password" />
+          <input id="pass" type="password" placeholder="Password" />
           <br /><br />
           <button
             type="button"
-            onclick="Login(email,password)"
-          >
-          <!--onclick="window.location.href='homepage.html';               
-                     localStorage.setItem('status','logged in');"-->
+            onclick="Login()" 
+          ><!-- go to login function -->
             Login
-          </button>
+          </button><!--onclick="window.location.href='homepage.html';               
+                     localStorage.setItem('status','logged in');"-->
         </form>
         <!-- Trigger/Open The Modal -->
         <p>
