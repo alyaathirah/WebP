@@ -1,3 +1,53 @@
+    //------------------------JS for Modal----------------------------//
+
+    //Delete ShoppingList
+    function myFunction2() {
+      var result = confirm("Confirm Deletion?");
+      if (result) {
+        var buttonID = "shoppinglist" + event.srcElement.id;
+        var myobj = document.getElementById(buttonID);
+        myobj.remove();
+      }
+    }
+
+      //modal addSL
+      $(document).ready(function(){
+          $("#editForm").hide();
+          $("#btn").click(function(e) {
+              $("#editForm").show();
+              $("#btn").hide();
+          });
+      });
+
+      $(document).ready(function(){
+          $("#btnClose").click(function(e) {
+              $("#editForm").hide();
+              $("#btn").show();
+          });
+      });
+
+      //addSL
+      var id = 3; 
+      function addSL(){
+        var input = document.getElementById("input").value;
+        var old = document.getElementById("shoppinglist1");
+        var newDiv = old.cloneNode(true);
+        newDiv.id = "shoppinglist" + id;
+        newDiv.querySelector(".deletebtn").id = id;
+        newDiv.querySelector("#titleList").innerHTML = input;
+        document.getElementById("newSL").appendChild(newDiv);
+        id++;
+        
+      }
+      //snackbar
+      function snack() {
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+      }
+      //------------------------JS for Modal----------------------------//
+
+
 var vegFruit = [{link:"images/products/Vegetables and Fruits/apple.png", name: "Apple 12pcs", price: "RM 10.99", inCart: 0},
                 {link:"images/products/Vegetables and Fruits/apricot.png", name: "Appricot 6pcs", price: "RM 10.99", inCart: 0},
                 {link:"images/products/Vegetables and Fruits/grapefruit.png", name: "Grapefruit 6pcs", price: "RM 12.99", inCart: 0},
@@ -8,6 +58,7 @@ let carts = document.querySelectorAll('.btn-cart');
 
 for(let i = 0; i<carts.length; i++){
   carts[i].addEventListener('click', () => {
+    console.log('clicked');
     console.log(vegFruit[i]);
     setItem(vegFruit[i]);
     //totalCost(products[i])
@@ -17,7 +68,6 @@ for(let i = 0; i<carts.length; i++){
 function setItem(product){
   let cartItems = localStorage.getItem("productsInCart");
   cartItems = JSON.parse(cartItems);
-  console.log(typeof cartItems);
   
 
   if(cartItems != null){
@@ -111,3 +161,5 @@ function displayCart(){
 }
 
 displayCart();
+
+
