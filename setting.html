@@ -54,7 +54,7 @@
     </header>
     <!--End of header-->
     <!--Start of Navigation Bar-->
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -65,18 +65,18 @@
             <a class="nav-link" href="homepage.html">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
               Categories
             </a>
-            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-              <li><a class="dropdown-item" href="fruits_vegetables.html">Fruits and Vegetables</a></li>
-              <li><a class="dropdown-item" href="snacks.html">Snacks</a></li>
+            <ul class="dropdown-menu " aria-labelledby="navbarDarkDropdownMenuLink">
+              <li><a class="dropdown-item" href="fruits_vegetables.html" >Fruits and Vegetables</a></li>
+              <li><a class="dropdown-item" href="snacks.html" >Snacks</a></li>
               <li><a class="dropdown-item" href="instant_food.html">Instant Food</a></li>
-              <li><a class="dropdown-item" href="#">Stationerie</a></li>
+              <li><a class="dropdown-item" href="#" >Stationerie</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about_us.html">About Us</a>
+            <a class="nav-link" href="about_us.html" >About Us</a>
           </li>
         </ul>
         
@@ -96,77 +96,46 @@
     <main class="profile1 container">
       <section class="profile" style="background-color: white;">
         <br><h2 class="title">Update Your Account</h2>
-        <!--<form action="#">--><div>
+        <!--<form action="#">--><div class="container" style="padding: 30px;">
           <div class ="wrapper text center">
             <input type ="file" class="photo">
           </div>
           <div class="row mb-3">
             <label for="FName" class="col-md-2 col-form-label">First Name</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control-user" id="FName"  placeholder="Maria">
+            <div class="col-sm-2">
+              <input type="text" class="form-control-user" id="FName"  value="Maria">
             </div>
-            <div class="col-sm-1">
-              <button type="input" class="submit-btn rounded-pill float-sm-end" onclick="check()" >Update</button>
-            </div>            
-            <label for="LName" class="col-sm-2 col-form-label">Last Name</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control-user" id="LName" placeholder="Mariam">
+            <label for="LName" class="col-sm-2 col-form-label" style="left: 3%">Last Name</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control-user" id="LName" value="Mariam">
             </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check1()">Update</button>
+            <label for="Username" class="col-sm-2 col-form-label" style="left: 3%">Username</label>
+            <div class="col-sm-2">
+              <input type="text" class="form-control-user" id="Username" value="@marry">
             </div>
           </div>
           <div class="row mb-3">
-            <label for="Username" class="col-sm-2 col-form-label">Username</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control-user" id="Username" placeholder="@marry">
-            </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check2()">Update</button>
-            </div>
             <label for="Email" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-3">
-              <input type="email" class="form-control-user" id="Email" placeholder="Mariamariam@gmail.com">
+              <input type="email" class="form-control-user" id="Email" value="Mariamariam@gmail.com">
             </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check3()">Update</button>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="Password1" class="col-sm-2 col-form-label">Password</label>
-            <div class="col-sm-3">
-              <input type="password" class="form-control-user" id="Password1"  value="12345" disabled>
-            </div>
-            <div class="col-sm-1">             
-            </div>
-            <label for="Password2" class="col-sm-2 col-form-label">New Password</label>
-            <div class="col-sm-3">
-              <input type="password" class="form-control-user" id="Password2">
-            </div>
-            <div class="col-sm-1">
-              <button type="button" class="submit-btn rounded-pill float-sm-end" onclick="check8()">Update</button>
+            <label for="Bio" class="col-sm-1 col-form-label">Bio</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control-user" id="Bio" value="Shopping is my cardio ;)">
             </div>
           </div>
           <div class="row mb-3">
             <label for="PNumber" class="col-sm-2 col-form-label">Phone Number</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control-user" id="PNumber" placeholder="+60123456789">
+            <div class="col-sm-2">
+              <input type="text" class="form-control-user" id="PNumber" value="+60123456789">
             </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check4()">Update</button>
+            <label for="Birthday" class="col-sm-1 col-form-label" style="left:2%">Birthday</label>
+            <div class="col-sm-2">
+              <input type="date" class="form-control-user" id="Birthday" value="2001-01-01" style="left:30%">
             </div>
-            <label for="Birthday" class="col-sm-2 col-form-label">Birthday</label>
-            <div class="col-sm-3">
-              <input type="date" class="form-control-user" id="Birthday" value="2001-01-01">
-            </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check5()">Update</button>
-            </div>
-          </div>
-          <div class="row mb-3">
-            <label for="inputGender" class="col-sm-2 col-form-label" id="inputGender">Gender</label><br>
-            <div class="col-sm-3">
-            <div class="form-check form-check-inline" for="inputGender">
+            <label for="inputGender" class="col-sm-1 col-form-label" id="Gender" style="left:8%">Gender</label><br>
+            <div class="col-sm-4" style="left:9%">
+            <div class="form-check form-check-inline" for="Gender">
               <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Male" value="Male">
               <label class="form-check-label" for="Male" style="color: maroon;">Male</label>
             </div>
@@ -179,44 +148,47 @@
               <label class="form-check-label" for="Other" style="color: maroon;">Other</label>
             </div>
             </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" data-bs-toggle="modal" data-bs-target="#exampleModal3">Update</button>
-            </div>
-            <label for="Bio" class="col-sm-2 col-form-label">Bio</label>
-            <div class="col-sm-3">
-              <input type="text" class="form-control-user" id="Bio" placeholder="Shopping is my cardio ;)">
-            </div>
-            <div class="col-sm-1">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check6()">Update</button>
-            </div>
-            </div>
           </div>
           <div class="row mb-3">
             <label for="Address" class="col-sm-2 col-form-label">Address</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control-user" id="Address" placeholder="121 Blue Hill Rd">
+              <input type="text" class="form-control-user" id="Address" value="121 Blue Hill Rd">
             </div>
           </div>
           <div class="row mb-3">
             <label for="City" class="col-sm-2 col-form-label">City</label>
-            <div class="col-sm-2">
-              <input type="text" class="form-control-user" id="City" placeholder="Hopewell Junction">
+            <div class="col-sm-3">
+              <input type="text" class="form-control-user" id="City" value="Hopewell Junction">
             </div>
             <label for="State" class="col-sm-1 col-form-label">State</label>
-            <div class=" col-sm-2">
-              <input type="text" class="form-control-user" id="State" placeholder="New York">
+            <div class=" col-sm-3">
+              <input type="text" class="form-control-user" id="State" value="New York">
             </div>
             <label for="Zip" class="col-sm-1 col-form-label">Zip</label>
             <div class="col-sm-2">
-              <input type="text" class="form-control-user" id="Zip" placeholder="12533">
-            </div>
-            <div class="col-sm-2">
-              <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check7()">Update</button>
+              <input type="text" class="form-control-user" id="Zip" value="12533">
             </div>
           </div>
+          <div class="row mb-3">
+          <div class="col-sm-1">
+            <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check1()">Update</button></div>
+          </div>
+          <div class="row mb-3">
+          <label for="Password1" class="col-sm-2 col-form-label">Password</label>
+          <div class="col-sm-3">
+            <input type="password" class="form-control-user" id="Password1"  value="12345" disabled>
+          </div>
+          <div class="col-sm-1">             
+          </div>
+          <label for="Password2" class="col-sm-2 col-form-label">New Password</label>
+          <div class="col-sm-3">
+            <input type="password" class="form-control-user" id="Password2">
+          </div>
+          <div class="col-sm-1">
+            <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check2()">Update</button></div>
+          </div>
+          <div class="row mb-3" style="color: maroon;"><p>Delete Account?<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" style="font-weight: bold;"> delete</a></p></div>
         </div><!--</form>-->
-          <div class="form-label alert" role="alert" style="color: maroon;">Delete Account? <a href="#" class="alert-link link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">delete </a></div>
-          
       </section>
       <!--Modal Delete-->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="Deletion" aria-hidden="true">
@@ -415,83 +387,10 @@
         
       }
       //Update Validation
-      function check(){
-        //$('#exampleModal').modal('show')
-        var FName = document.getElementById("FName").value;
-        if( FName == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
       function check1(){
-        var LName = document.getElementById("LName").value;
-        if( LName == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
           $('#exampleModal3').modal('show');
-        }
       }
       function check2(){
-        var UName = document.getElementById("Username").value;
-        if( UName == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check3(){
-        var Email = document.getElementById("Email").value;
-        if( Email == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check4(){
-        var PNumber = document.getElementById("PNumber").value;
-        if( PNumber == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check5(){
-        var Birthday = document.getElementById("Birthday").value;
-        if( Birthday == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check6(){
-        var Bio = document.getElementById("Bio").value;
-        if( Bio == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check7(){
-        var Address = document.getElementById("Address").value;
-        var City = document.getElementById("City").value;
-        var State = document.getElementById("State").value;
-        var Zip = document.getElementById("Zip").value;
-        if( Address == "" || City == "" || State == "" || Zip == ""){
-          $('#exampleModal4').modal('show');
-        }
-        else{
-          $('#exampleModal3').modal('show');
-        }
-      }
-      function check8(){
         var Password2= document.getElementById("Password2").value;
         if( Password2 == ""){
           $('#exampleModal4').modal('show');
