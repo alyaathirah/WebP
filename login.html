@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap.css" />
 
     <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/userList.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <title>Login Page</title>
   </head>
@@ -26,15 +27,16 @@
 
         <form>
           <br />
-          <input type="userEmail" placeholder="Email" />
+          <input name="email" type="email" placeholder="Email" />
           <br /><br />
-          <input type="password" placeholder="Password" />
+          <input name="password" type="password" placeholder="Password" />
           <br /><br />
           <button
             type="button"
-            onclick="window.location.href='homepage.html';               
-                     localStorage.setItem('status','logged in');"
+            onclick="Login(email,password)"
           >
+          <!--onclick="window.location.href='homepage.html';               
+                     localStorage.setItem('status','logged in');"-->
             Login
           </button>
         </form>
