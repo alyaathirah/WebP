@@ -14,8 +14,9 @@
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="css/styleShoppingList.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/product_page.js"></script>
+  <!-- <script type="text/javascript" src="js/product_page.js"></script>
     <script type="text/javascript" src="js/project_desc.js"></script>
+    <script async type="text/javascript" src="js/shoppingList.js"></script>-->
 
   </head>
   <body class="container">
@@ -218,7 +219,7 @@
    </div>
 
     <!--Start of Row Product--> 
-  <div class = "row md">
+  <!--<div class = "row md">
     <div class = "item" id = "item1">
 
       <div class = "col-md-1">
@@ -263,11 +264,11 @@
           </div>
           </div>
       </div>
-    </div>
+    </div>-->
        <!--End of Row of Product--> 
 
        <!--Start of Row Product--> 
-  <div class = "row md">
+  <!--<div class = "row md">
     <div class = "item" id = "item2">
       <div class = "col-md-1">
             <div class = "buttons">
@@ -313,21 +314,13 @@
           </div>
       </div>
     </div>
-</div>
+    </div>-->
+
        <!--End of Row of Product--> 
+      <div class = "appendList">
 
-      <div id = "secList">
-      <script>
-
-      window.localStorage.removeItem("passImg");
-      window.localStorage.removeItem("passName");
-      window.localStorage.removeItem("passPrice");
-      window.localStorage.removeItem("test");
-      secList.removeChild(newDiv);
-      </script>
-    </div>
-
-    
+      </div>
+  </div>
 
        <!--Total Price-->
      <div class = "sumPrice">
@@ -346,64 +339,10 @@
             </div>
             
             <div class = "col-md-1" id = "sumPrice">
-            
             </div>
-            <script>
-              //calculate price
-
-              //initial price
-              var p = [];
-              var q = [];
-              var result = 0;
-              for(var i = 1; i<10; i++){
-                  p[i] = parseInt(document.getElementById('price' + i).innerText);
-                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
-                  result = result + p[i]*(q[i]);
-                  document.getElementById("sumPrice").innerHTML = result;
-              }
-
-              //add price
-              function addFx(elem){
-                var p = [];
-                var q = [];
-                var result = 0;
-                elem = parseInt(elem.slice(-1));
-                for(var i = 1; i<10; i++){
-                  p[i] = parseInt(document.getElementById('price' + i).innerText);
-                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
-                     if(i == elem){
-                     q[i]+=1;
-                    }
-                  result = result + p[i]*(q[i]);
-                  document.getElementById("sumPrice").innerHTML = result;
-                }
-              }   
-              //minus price
-              function minusFx(elem){
-                var p = [];
-                var q = [];
-                var result = 0;
-                elem = parseInt(elem.slice(-1));
-                for(var i = 1; i<10; i++){
-                  p[i] = parseInt(document.getElementById('price' + i).innerText);
-                  q[i] = parseInt(document.getElementById('quantity' + i).value);   
-                     if(i == elem){
-                     q[i]-=1;
-                    }
-                  result = result + p[i]*(q[i]);
-                  document.getElementById("sumPrice").innerHTML = result;
-                }
-              }
-              
-              //removeitem price
-              function removeItemCost(p,q){
-              var minus = p*q;
-              var curResult =  parseInt(document.getElementById("sumPrice").innerHTML);
-              document.getElementById("sumPrice").innerHTML = curResult - minus;
-              }
-            </script>
         </div>
       </div>
+    </div>
     </div>
     
   <br>
@@ -577,8 +516,10 @@
       </div>
       </div> 
     </div>
+    </div>
 
     <!-- JS for Shopping List -->
+    <script type="text/javascript" src="js/shoppingList.js"></script>
     <script>
       //like button
       $('.like-btn').on('click', function() {
@@ -656,15 +597,83 @@
       });
 
       //addSL
+      var id = 3; 
       function addSL(){
         var input = document.getElementById("input").value;
         var old = document.getElementById("shoppinglist1");
         var newDiv = old.cloneNode(true);
-        newDiv.id = "shoppinglist3";
-        newDiv.querySelector(".deletebtn").id = "3";
+        newDiv.id = "shoppinglist" + id;
+        newDiv.querySelector(".deletebtn").id = id;
         newDiv.querySelector("#titleList").innerHTML = input;
         document.getElementById("newSL").appendChild(newDiv);
+        id++;
       }
+
+      //calculate price
+
+      //initial price
+      var p = [];
+      var q = [];
+      var result = 0;
+      for(var i = 1; i<10; i++){
+        p[i] = parseInt(document.getElementById('price' + i).innerText);
+        q[i] = parseInt(document.getElementById('quantity' + i).value);   
+        result = result + p[i]*(q[i]);
+        document.getElementById("sumPrice").innerHTML = result;
+      }
+
+      //add price
+      function addFx(elem){
+      var p = [];
+      var q = [];
+      var result = 0;
+      elem = parseInt(elem.slice(-1));
+      for(var i = 1; i<10; i++){
+        p[i] = parseInt(document.getElementById('price' + i).innerText);
+        q[i] = parseInt(document.getElementById('quantity' + i).value);   
+          if(i == elem){
+            q[i]+=1;
+          }
+        result = result + p[i]*(q[i]);
+        document.getElementById("sumPrice").innerHTML = result;
+        }
+      }   
+
+      //minus price
+      function minusFx(elem){
+      var p = [];
+      var q = [];
+      var result = 0;
+      elem = parseInt(elem.slice(-1));
+      for(var i = 1; i<10; i++){
+        p[i] = parseInt(document.getElementById('price' + i).innerText);
+        q[i] = parseInt(document.getElementById('quantity' + i).value);   
+          if(i == elem){
+            q[i]-=1;
+          }
+        result = result + p[i]*(q[i]);
+        document.getElementById("sumPrice").innerHTML = result;
+      }
+      }
+              
+      //removeitem price
+      function removeItemCost(p,q){
+      var minus = p*q;
+      var curResult =  parseInt(document.getElementById("sumPrice").innerHTML);
+      document.getElementById("sumPrice").innerHTML = curResult - minus;
+      }
+
+      //addToListButton
+    /*  var id = 3; 
+      function addNewItem(){
+        var old = document.getElementById("item1");
+        var newDiv = old.cloneNode(true);
+        newDiv.id = "item" + id;
+        newDiv.querySelector(".deletebtn").id = id;
+        //newDiv.querySelector("#titleList").innerHTML = input;
+        document.getElementById("appendList").appendChild(newDiv);
+        id++;
+      }*/
 
     </script>
   </body>
