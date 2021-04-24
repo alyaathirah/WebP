@@ -44,7 +44,7 @@
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
           <a
-            class="btn btn-sm btn-outline-secondary"
+            class="btn btn-sm btn-outline-secondary disabled"
             href="#"
             style="margin-right: 10px;"
             ><img
@@ -161,7 +161,7 @@
       <div class = "shoppingList" id = "shoppinglist2">
         <div class="row">
           <div class="col">
-            <a href="shoppingList.html" style="color: black;">Grocery List</a>
+            <a style="color: black;">To-Diet List</a>
           </div>
           <div class="col-md-auto">
           </div>
@@ -260,7 +260,7 @@
         </div>
 
         <div class = "col-md-1">
-          <div class="total-price"><span id ="price1">5.9</span>
+          <div class="total-price">RM<span id ="price1">5.90</span>
           </div>
         </div>
 
@@ -307,7 +307,7 @@
         </div>
 
         <div class = "col-md-1">
-          <div class="total-price" id = "price2">20
+          <div class="total-price">RM<span id ="price2">5.95</span>
           </div>
         </div>
 
@@ -578,7 +578,7 @@
         p[i] = parseFloat(document.getElementById('price' + i).innerText);
         q[i] = parseFloat(document.getElementById('quantity' + i).value);   
         result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = result;
+        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
       }
 
       //add price
@@ -594,7 +594,7 @@
             q[i]+=1;
           }
         result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = result;
+        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
         }
       }   
 
@@ -611,15 +611,15 @@
             q[i]-=1;
           }
         result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = result;
+        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
       }
       }
               
       //removeitem price
       function removeItemCost(p,q){
       var minus = p*q;
-      //(Math.round(num * 100) / 100).toFixed(2);
       var curResult =  parseFloat(document.getElementById("sumPrice").innerHTML);
+      alert(minus)
       document.getElementById("sumPrice").innerHTML = curResult - minus;
       }
 
