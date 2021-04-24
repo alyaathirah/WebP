@@ -96,7 +96,7 @@
     <main class="profile1 container">
       <section class="profile" style="background-color: white;">
         <br><h2 class="title">Update Your Account</h2>
-        <form action="#" method="GET">
+        <!--<form action="#">--><div>
           <div class ="wrapper text center">
             <input type ="file" class="photo">
           </div>
@@ -214,7 +214,7 @@
               <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check7()">Update</button>
             </div>
           </div>
-          </form>
+        </div><!--</form>-->
           <div class="form-label alert" role="alert" style="color: maroon;">Delete Account? <a href="#" class="alert-link link-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">delete </a></div>
           
       </section>
@@ -397,7 +397,10 @@
         var curr = document.querySelector("#Password1").value;
         var temp = document.querySelector("#Password2").value;
         var currv = document.querySelector("#Password3").value;
-        if(curr != currv ){
+        if( real == "" || currv == ""){
+          alert("Please fill in the field!");
+        }
+        else if(curr != currv ){
           $("#exampleModal2").modal("hide");
           alert("Not matching current password!");
         }
