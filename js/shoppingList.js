@@ -205,7 +205,7 @@ function displayCart(){
     else if (mainList && loggedIn){
       mainList.innerHTML = '';
       mainList.innerHTML = `
-      <div class = "row md"><img src="images/happyshopping.png" alt="" width="300" height="300" class="center"/> </div> 
+      <div class = "row md"><img src="images/emptCart.png" alt="" width="300" height="300" class="center"/> </div> 
       <div class = "row md"><h5 class="center" style="font-family:Candara; color: black;">Your list is currently empty.
       Start listing your item(s) now!</h5></div><br>
       <div class="center">
