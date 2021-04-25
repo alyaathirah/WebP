@@ -61,11 +61,17 @@ var vegFruit = [{link:"images/products/Vegetables and Fruits/apple.png", name: "
 let carts = document.querySelectorAll('.btn-cart');
 
 for(let i = 0; i<carts.length; i++){
+  let loggedIn = localStorage.getItem("status");
   carts[i].addEventListener('click', () => {
-  //  console.log('clicked');
-  //  console.log(vegFruit[i]);
+    if(loggedIn){
+      $('#exampleModal').modal('toggle');
+      $('#exampleModal').modal('show');
     setItem(vegFruit[i]);
     totalCost(vegFruit[i]);
+    }
+    else{
+      alert("Please login first");
+    }
   })
 }
 
