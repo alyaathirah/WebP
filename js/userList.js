@@ -16,7 +16,9 @@ function Login(){
     for(i=0; i<admin.length; i++){
         if(email == admin[i])
             if(password == adminPass[i]){
+                localStorage.setItem("status","logged in")
                 location.assign("homepage.html");//go to homepage admin
+                
                 return; //stop the function
             }
     }
@@ -25,9 +27,15 @@ function Login(){
     for(i=0; i<userEmail.length; i++){
         if(email == userEmail[i])
             if(password == userPass[i]){
+                localStorage.setItem("status","logged in")
                 location.assign("homepage.html");//go to homepage user
+                
                 return;//stop the function
             }
+    }
+
+    if(email==null || password == null){
+        window.alert("Please fill in both fields.");
     }
     
 }
