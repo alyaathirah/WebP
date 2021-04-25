@@ -8,22 +8,19 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title id="title_page">Product Description</title>
+    <title id="page_title">Product Description</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="user.css">
-    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="js/project_desc.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleShoppingList.css">
-    <script type="text/javascript" src="js/product_page.js"></script>
-    <script type="text/javascript" src="js/test.js"></script>
-    </head>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/project_desc.js"></script>
+</head>
   <body class="container">
     <!--Start of header-->
     <header class="blog-header py-3">
-      <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="row flex-itemrap justify-content-between align-items-center">
         <!--User's Account modal button-->
         <div class="col-4 pt-1">
           <a class="account" href="#" data-toggle="modal" data-target="#staticBackdrop" 
@@ -31,14 +28,14 @@
                <br />
             My Account</a>
             <script>
-              var status = localStorage.getItem("status");
-               if(status != "logged in"){
-               account = document.querySelector(".account");
-               account.setAttribute("data-toggle","''");
-               account.setAttribute("data-target","''")
-               account.setAttribute("href","login.html");
-              }
-              </script>
+                var status = localStorage.getItem("status");
+                 if(status != "logged in"){
+                 account = document.querySelector(".account");
+                 account.setAttribute("data-toggle","''");
+                 account.setAttribute("data-target","''")
+                 account.setAttribute("href","login.html");
+                }
+                </script>
           <br />
         </div>
         <div class="col-4 text-center">
@@ -50,7 +47,7 @@
           <a
             class="btn btn-sm btn-outline-secondary"
             href="shoppingList.html"
-            style="margin-right: 10px; "
+            style="margin-right: 10px;"
             ><img
             class="list"
             src="images/list.png"
@@ -72,20 +69,13 @@
     </header>
     <!--End of header-->
     <!--Start of Navigation Bar-->
-    <nav class="navbar sticky-top navbar-expand-lg" style="margin-top: -1px">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
           <li class="nav-item">
             <a class="nav-link" href="homepage.html"
               >Home <span class="sr-only">(current)</span></a
@@ -104,7 +94,9 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="fruits_vegetables.html">Fruits and Vegetables</a>
+              <a class="dropdown-item" href="fruits_vegetables.html"
+                >Fruits and Vegetables</a
+              >
               <a class="dropdown-item" href="snacks.html">Snacks</a>
               <a class="dropdown-item" href="instant_food.html">Instant Food</a>
               <a class="dropdown-item" href="#">Stationeries</a>
@@ -115,23 +107,23 @@
             <a class="nav-link" href="about_us.html">About Us</a>
           </li>
         </ul>
-      </div>
-      <form class="form-inline my-2 my-lg-0" action = "/search.html">
-        <input class="searchBar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="getQuery()">Search</button>
-      </form>
-    </div>
-    <script>
-      function getQuery(){
-        var query = document.querySelector(".searchBar").value;
-        localStorage.setItem("query",query)
-      }
-    </script>
+        
+        <form class="form-inline my-2 my-lg-0" action = "/search.html">
+            <input class="searchBar form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="getQuery()">Search</button>
+          </form>
+        </div>
+        <script>
+          function getQuery(){
+            var query = document.querySelector(".searchBar").value;
+            localStorage.setItem("query",query)
+          }
+        </script>
     </nav>
     <!--End of Navigation Bar-->
-    
     <!--Start of Main-->
     <main class="container">
+
         <div class="page_product ">
             <div class="product_details">
                 <div class="product_details-img">
@@ -169,14 +161,13 @@
                             <div class="col-md-3"><p class="stock">Stock: 100</p></div>
                           </div>
                         </div>  
-                    <button  type="button" class="btn btn-light" id="addToList">Add to List</button>
-                </div>
-                    
+                    <button  type="button" class="btn btn-light btn-cart" id="btn-cart" style="color: aliceblue;">Add to List</button>
+                </div>    
               </div>
         </div>
+
     </main>
     <!--End of Main-->
-    
     <!--Start of Footer-->
     <!-- Footer -->
     <footer class="text-center text-lg-start">
@@ -203,7 +194,7 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-dark">Call Us</a>
+                <a class="text-dark">Call Us: 014-tekan2 x dpt</a>
               </li>
               <li>
                 <a href="#!" class="text-dark">Mail Us</a>
@@ -278,7 +269,75 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-   
+       <!----------Shopping List modal -------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title title" id="UserProfileLabel" style="font-size: 25px;">Select List</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                
+            <!-- Content in Modal -->
+            <div class="modal-body">
+                <div class="container-fluid">
+                
+                <div class = "shoppingList" id = "shoppinglist1">
+                <div class="row">
+                    <div class="col">
+                    <a class = "addToList" href="#" class="close" data-dismiss="modal" style="color: black;" onclick="snack()">
+                        <div id = "titleList">Shopping List</div>
+                    </a>
+                    </div>
+                    <div class="col-md-auto">
+                    
+                    </div>
+                    <div class="col col-lg-2">
+                    <div class="deletebtn" id = "1" onClick = "myFunction2()"></div>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div class = "shoppingList" id = "shoppinglist2">
+                <div class="row">
+                    <div class="col">
+                    <a href="#" style="color: black;">Grocery List</a>
+                    </div>
+                    <div class="col-md-auto">
+                    </div>
+        
+                    <div class="col col-lg-2">
+                        <span class="deletebtn" id = "2" onClick = "myFunction2()"></span>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div id = "newSL"></div>
+            
+                    <div class = "row">
+                    <br><br><br>
+                    <button id="btn" class="button" style = "width: 150px; margin:auto; display:block;" >Add New List</button>
+                    
+                    <form id="editForm"  action="" method="post" name="editForm" style = "margin:auto; display:block;">
+                    
+                        <input type="text" id="input" size="20" name="fname">
+                        <button type="button" class = "button" style = "width: 50px;" onClick = 'addSL()'>+</button>
+                        <button id="btnClose" class = "button" style = "width: 150px;">Cancel</button>
+                    </form>
+                    </div>
+                
+                </div>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+        <div id="snackbar">Item was added into Shopping List</div>
+        <!------End of Shopping List modal -------->
         <!--Login Alert Modal-->
       <div class="modal fade" id="loginAlrertModal" tabindex="-1" aria-labelledby="loginAlrertModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -290,7 +349,7 @@
             Please login first before adding item(s) to your list
             </div>
             <div class="modal-footer">
-                <a href="product_desc.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button></a>
+                <a href="product_des.html"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button></a>
                 <a href="login.html">
                     <button type="button" class="btn" style="background-color:  maroon; color: white;">Login</button>
                 </a>    
@@ -298,52 +357,55 @@
         </div>
         </div>
       </div>
-    <!-- Profile Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="UserProfileLabel" style="font-weight: bold; color:#bb4166f5; background: linear-gradient(to right, rgb(87, 14, 14) 30%,#8d1a3cf5 50%); -webkit-background-clip: text; -webkit-text-fill-color:transparent;">My Account</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
-              <div class="row" >
-              <div class="col-sm-4 label">First Name</div>
-              <div class="col-sm-4 label">Last Name</div>
-              <div class="col-sm-4 label">Username</div>
-              <div class="col-sm-4 text-muted" id="FName">Maria</div>
-              <div class="col-sm-4 text-muted" id="LName">Mariam</div>
-              <div class="col-sm-4 text-muted" id="Username">@marry</div>
-              <div class="col-sm-6 label">Email</div>
-              <div class="col-sm-6 label">Bio</div>
-              <div class="col-sm-6 text-muted" id="LName">Mariamariam@gmail.com</div>
-              <div class="col-sm-6 text-muted" id="LName">Shopping is my cardio ;)</div>
-              <div class="col-sm-4 label">Gender</div>
-              <div class="col-sm-4" style="color:maroon; font-size:15px; font-weight:bold;">Phone Number</div>
-              <div class="col-sm-4 label">Birthday</div>
-              <div class="col-sm-4 text-muted" id="Gender">Female</div>
-              <div class="col-sm-4 text-muted" id="PNumber">+6012345789</div>
-              <div class="col-sm-4 text-muted" id="Birthday">01-01-01</div>
-              <div class="col-sm-12 label">Address</div>
-              <div class="col-sm-12 text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</div>
+        <!-- Profile Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="UserProfileLabel" style="font-weight: bold; color:#bb4166f5; background: linear-gradient(to right, rgb(87, 14, 14) 30%,#8d1a3cf5 50%); -webkit-background-clip: text; -webkit-text-fill-color:transparent;">My Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-          <div class="modal-footer">
-            <a href="setting.html"><button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button></a>
-            <a href="homepage.html" onclick="reset()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
-            <script>
-              function reset(){
-                localStorage.clear();
-              }
-            </script>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
+                  <div class="row" >
+                  <div class="col-sm-4 label">First Name</div>
+                  <div class="col-sm-4 label">Last Name</div>
+                  <div class="col-sm-4 label">Username</div>
+                  <div class="col-sm-4 text-muted" id="FName">Maria</div>
+                  <div class="col-sm-4 text-muted" id="LName">Mariam</div>
+                  <div class="col-sm-4 text-muted" id="Username">@marry</div>
+                  <div class="col-sm-6 label">Email</div>
+                  <div class="col-sm-6 label">Bio</div>
+                  <div class="col-sm-6 text-muted" id="LName">Mariamariam@gmail.com</div>
+                  <div class="col-sm-6 text-muted" id="LName">Shopping is my cardio ;)</div>
+                  <div class="col-sm-4 label">Gender</div>
+                  <div class="col-sm-4" style="color:maroon; font-size:15px; font-weight:bold;">Phone Number</div>
+                  <div class="col-sm-4 label">Birthday</div>
+                  <div class="col-sm-4 text-muted" id="Gender">Female</div>
+                  <div class="col-sm-4 text-muted" id="PNumber">+6012345789</div>
+                  <div class="col-sm-4 text-muted" id="Birthday">01-01-01</div>
+                  <div class="col-sm-12 label">Address</div>
+                  <div class="col-sm-12 text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</div>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <a href="setting.html"><button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button></a>
+                <a href="homepage.html" onclick="reset()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+                
+
+                <script type="text/javascript" src="js/shoppingList.js"></script>
+                <script>
+                  function reset(){
+                    localStorage.clear();
+                  }
+                </script>
+              </div>
+              </div>
           </div>
-          </div>
-      </div>
-      </div> 
-    </div>
+          </div> 
+        </div>
   </body>
 </html>
