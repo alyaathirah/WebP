@@ -56,7 +56,14 @@ var vegFruit = [{link:"images/products/Vegetables and Fruits/apple.png", name: "
                 {link:"images/products/Vegetables and Fruits/strawberry.png", name: "Strawberry", price: 10.99, inCart: 0},
                 {link:"images/products/Vegetables and Fruits/watermelon.png", name: "Watermelon", price: 5.99, inCart: 0},
                 {link:"images/products/Vegetables and Fruits/broccoli.png", name: "Brocolli", price: 9.99, inCart: 0},
-                {link:"images/products/Vegetables and Fruits/cabbage.png", name: "Brocolli", price: 10.99, inCart: 0}]
+                {link:"images/products/Vegetables and Fruits/cabbage.png", name: "Cabbage", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/cauliflower.png", name: "Cauliflower", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/cucumber.png", name: "Cucumber", price: 12.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/garlic.png", name: "Garlic", price: 9.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/kiwi.png", name: "Kiwi", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/pepper.png", name: "Pepper", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/spinach.png", name: "Spinach", price: 12.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/tomato.png", name: "Tomato", price: 9.99, inCart: 0}]
 
 let carts = document.querySelectorAll('.btn-cart');
 
@@ -70,7 +77,10 @@ for(let i = 0; i<carts.length; i++){
     totalCost(vegFruit[i]);
     }
     else{
-      alert("Please login first");
+      $('#loginAlrertModal').modal('toggle');
+      $('#loginAlrertModal').modal('show');
+      $('#cancelbtn').hide();
+
     }
   })
 }

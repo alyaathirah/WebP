@@ -318,7 +318,7 @@
           </div>
       </div>
     </div>
-    </div>
+    
 
        <!--End of Row of Product--> 
        <!--Total Price-->
@@ -342,6 +342,7 @@
         </div>
       </div>
     </div>
+  </div>
     </div>
   </div>
     
@@ -578,7 +579,7 @@
         p[i] = parseFloat(document.getElementById('price' + i).innerText);
         q[i] = parseFloat(document.getElementById('quantity' + i).value);   
         result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
+        document.getElementById("sumPrice").innerHTML = "RM" + (Math.round(result * 100) / 100);
       }
 
       //add price
@@ -619,7 +620,6 @@
       function removeItemCost(p,q){
       var minus = p*q;
       var curResult =  parseFloat(document.getElementById("sumPrice").innerHTML);
-      alert(minus)
       document.getElementById("sumPrice").innerHTML = curResult - minus;
       }
 
