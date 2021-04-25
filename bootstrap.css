@@ -97,6 +97,9 @@ main {
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
+a.nav-link:hover {
+  color: white;
+}
 
 hr {
   box-sizing: content-box;
@@ -189,7 +192,6 @@ sup {
 }
 
 a {
-  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
@@ -3111,21 +3113,18 @@ fieldset:disabled a.btn {
 .btn-outline-secondary.focus {
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
 }
-
+.nav-item.active {
+  color: white;
+  background-color: #800808;
+}
 .btn-outline-secondary.disabled,
 .btn-outline-secondary:disabled {
   color: #6c757d;
   background-color: transparent;
 }
-
-.btn-outline-secondary:not(:disabled):not(.disabled):active,
-.btn-outline-secondary:not(:disabled):not(.disabled).active,
-.show > .btn-outline-secondary.dropdown-toggle {
-  color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+.signUp:hover {
+  cursor: pointer;
 }
-
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-secondary.dropdown-toggle:focus {
@@ -4552,7 +4551,6 @@ input[type="button"].btn-block {
 }
 
 .nav-link.disabled {
-  color: #6c757d;
   pointer-events: none;
   cursor: default;
 }
@@ -5017,19 +5015,6 @@ input[type="button"].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 
-.navbar-light .navbar-nav .nav-link.disabled {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .active > .nav-link,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .nav-link.active {
-  color: rgba(0, 0, 0, 0.9);
-}
-.nav-item.active .nav-link {
-  color: #000;
-}
 .nav-item.active .nav-link:hover {
   color: #000;
   cursor: default;
@@ -5328,11 +5313,15 @@ input[type="button"].btn-block {
     width: 100%;
   }
 }
-
+.account {
+  color: #000;
+}
 .accordion {
   overflow-anchor: none;
 }
-
+a.nav-link {
+  color: #000;
+}
 .accordion > .card {
   overflow: hidden;
 }

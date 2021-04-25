@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="bootstrap.css" />
 
     <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/userList.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <title>Login Page</title>
   </head>
@@ -20,26 +21,29 @@
         <!-- no need to set size here -->
       </div>
       <div class="content">
-        <h2>Welcome to GroSir</h2>
+        <h2>Welcome to Gro-Sir</h2>
         <br />
         <p>Sign In</p>
 
         <form>
           <br />
-          <input type="userEmail" placeholder="Email" />
+          <input id="email" type="mail" placeholder="Email" />
           <br /><br />
-          <input type="userPassword" placeholder="Password" />
+          <input id="password" type="password" placeholder="Password" />
           <br /><br />
           <button
             type="button"
-            onclick="window.location.href='homepage.html';               
-                     localStorage.setItem('status','logged in');"
-          >
+            onclick="Login()" 
+          ><!-- go to login function -->
             Login
-          </button>
+          </button><!--onclick="window.location.href='homepage.html';               
+                     localStorage.setItem('status','logged in');"-->
         </form>
         <!-- Trigger/Open The Modal -->
-        <p>Need an account? <span onclick="openModal()">Sign Up</span></p>
+        <p>
+          Need an account?
+          <span class="signUp" onclick="openModal()">Sign Up</span>
+        </p>
       </div>
     </div>
 
@@ -144,18 +148,18 @@
         <p>Sign up to know our latest deals and shop our products!</p>
         <form>
           <br />
-          <input type="userName" placeholder="Name" />
+          <input id="userName" placeholder="Name" />
           <br /><br />
-          <input type="userEmail" placeholder="Email" />
+          <input id="email" placeholder="Email" />
           <br /><br />
-          <input type="userPhone" placeholder="Phone Number" />
+          <input id="userPhone" placeholder="Phone Number" />
           <br /><br />
-          <input type="userPassword" placeholder="Password" />
+          <input id="password" placeholder="Password" />
           <br /><br />
           <button
             id="myBtn"
             type="button"
-            onclick="window.location.href='homepage.html';"
+            onclick="closeModal(); SignUp()"
           >
             Sign Up
           </button>

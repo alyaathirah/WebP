@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleShoppingList.css">
     <script type="text/javascript" src="js/product_page.js"></script>
     <script type="text/javascript" src="js/product_desc.js"></script>
     <script type="text/javascript" src="js/test.js"></script>
@@ -47,19 +48,29 @@
           <a
             class="btn btn-sm btn-outline-secondary"
             href="shoppingList.html"
-            style="margin-right: 10px; color: black"
+            style="margin-right: 10px;"
             ><img
-              src="images/list.png"
-              style="width: auto; height: 50px"
-            /><br />My List</a
-          >
+            class="list"
+            src="images/list.png"
+            style="width: auto; height: 50px"
+          /><br />My List</a
+        >
+        <script>
+          var switchImg = document.querySelector(".list");
+          switchImg.addEventListener("mouseover", function(){
+            switchImg.setAttribute("src","images/listwhite.png")
+          })
+          switchImg.addEventListener("mouseout",function(){
+            switchImg.setAttribute("src","images/list.png")
+          })
+        </script>
           <a></a>
         </div>
       </div>
     </header>
     <!--End of header-->
     <!--Start of Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -125,8 +136,9 @@
                                 <img id="prdimg1" alt = "product image">
                             </div>
                             <div class = "product-btns">
-                                <a href="login.html">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                <a href="#">
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                     </button>
                                 </a>
                                 <a href="product_desc.html">
@@ -150,7 +162,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -176,7 +189,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -202,7 +216,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -228,7 +243,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -254,7 +270,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -280,7 +297,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -306,7 +324,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -332,7 +351,8 @@
                             </div>
                             <div class = "product-btns">
                                 <a href="#">
-                                    <button type = "button" class = "btn-cart"> add to list
+                                    <button type = "button" class = "btn-cart"
+                                    data-toggle="modal" data-target="#exampleModal"> add to list
                                         <span><i class = "fas fa-plus"></i></span>
                                     </button>
                                 </a>
@@ -638,69 +658,124 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
-    <!-- User's Account Modal -->
-    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h6 class="modal-title title" id="UserProfileLabel">My Account</h6>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
-              <div class="container">
-                  <div class="row">
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">First Name</p>
-                  <h5 class="text-muted" id="FName">Maria</h5>
+       <!----------Shopping List modal -------->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h6 class="modal-title title" id="UserProfileLabel" style="font-size: 25px;">Select List</h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                
+            <!-- Content in Modal -->
+            <div class="modal-body">
+                <div class="container-fluid">
+                
+                <div class = "shoppingList" id = "shoppinglist1">
+                <div class="row">
+                    <div class="col">
+                    <a class = "addToList" href="#" class="close" data-dismiss="modal" style="color: black;" onclick="snack()">
+                        <div id = "titleList">Shopping List</div>
+                    </a>
+                    </div>
+                    <div class="col-md-auto">
+                    
+                    </div>
+                    <div class="col col-lg-2">
+                    <div class="deletebtn" id = "1" onClick = "myFunction2()"></div>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div class = "shoppingList" id = "shoppinglist2">
+                <div class="row">
+                    <div class="col">
+                    <a href="#" style="color: black;">Grocery List</a>
+                    </div>
+                    <div class="col-md-auto">
+                    </div>
+        
+                    <div class="col col-lg-2">
+                        <span class="deletebtn" id = "2" onClick = "myFunction2()"></span>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div id = "newSL"></div>
+            
+                    <div class = "row">
+                    <br><br><br>
+                    <button id="btn" class="button" style = "width: 150px; margin:auto; display:block;" >Add New List</button>
+                    
+                    <form id="editForm"  action="" method="post" name="editForm" style = "margin:auto; display:block;">
+                    
+                        <input type="text" id="input" size="20" name="fname">
+                        <button type="button" class = "button" style = "width: 50px;" onClick = 'addSL()'>+</button>
+                        <button id="btnClose" class = "button" style = "width: 150px;">Cancel</button>
+                    </form>
+                    </div>
+                
+                </div>
+                </div>
+            
+            </div>
+            </div>
+        </div>
+        <div id="snackbar">Item was added into Shopping List</div>
+        <!------End of Shopping List modal -------->
+        <!-- Profile Modal -->
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="UserProfileLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="UserProfileLabel" style="font-weight: bold; color:#bb4166f5; background: linear-gradient(to right, rgb(87, 14, 14) 30%,#8d1a3cf5 50%); -webkit-background-clip: text; -webkit-text-fill-color:transparent;">My Account</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Last Name</p>
-                  <h5 class="text-muted" id="LName">Mariam</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Username</p>
-                  <h5 class="text-muted" id="Username">@marry</h5>
-              </div>
-              <div class="col-sm-12">
-                  <p class="form-label font-weight-bold">Email</p>
-                  <h5 class="text-muted" id="LName">Mariamaria2@gmail.com</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Gender</p>
-                  <h5 class="text-muted" id="Gender">Female</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Phone Number</p>
-                  <h5 class="text-muted" id="PNumber">+6012345789</h5>
-              </div>
-              <div class="col-sm-4">
-                  <p class="form-label font-weight-bold">Birthday</p>
-                  <h5 class="text-muted" id="Birthday">01 / 01 / 01</h5>
-              </div>
-              <div class="col-sm-12">
-                  <p class="form-label font-weight-bold">Address</p>
-                  <h5 class="text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</h5>
-              </div>
-          </div>
-          </div>
-          <div class="modal-footer">
-            <a href="setting.html">
-                <button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button>
-                <a href="homepage.html" onclick="reset()">
-                    <button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+              <div class="modal-body">
+                <div class="container-fluid">
+                  <img src="images/abstract-user-flat-4.png" class="wrapper2" alt="profile photo" id="profile photo">
+                  <div class="row" >
+                  <div class="col-sm-4 label">First Name</div>
+                  <div class="col-sm-4 label">Last Name</div>
+                  <div class="col-sm-4 label">Username</div>
+                  <div class="col-sm-4 text-muted" id="FName">Maria</div>
+                  <div class="col-sm-4 text-muted" id="LName">Mariam</div>
+                  <div class="col-sm-4 text-muted" id="Username">@marry</div>
+                  <div class="col-sm-6 label">Email</div>
+                  <div class="col-sm-6 label">Bio</div>
+                  <div class="col-sm-6 text-muted" id="LName">Mariamariam@gmail.com</div>
+                  <div class="col-sm-6 text-muted" id="LName">Shopping is my cardio ;)</div>
+                  <div class="col-sm-4 label">Gender</div>
+                  <div class="col-sm-4" style="color:maroon; font-size:15px; font-weight:bold;">Phone Number</div>
+                  <div class="col-sm-4 label">Birthday</div>
+                  <div class="col-sm-4 text-muted" id="Gender">Female</div>
+                  <div class="col-sm-4 text-muted" id="PNumber">+6012345789</div>
+                  <div class="col-sm-4 text-muted" id="Birthday">01-01-01</div>
+                  <div class="col-sm-12 label">Address</div>
+                  <div class="col-sm-12 text-muted" id="Address">121 Blue Hill Rd Hopewell Junction 12533 New York</div>
+                  </div>
+                </div>
+              <div class="modal-footer">
+                <a href="setting.html"><button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button></a>
+                <a href="homepage.html" onclick="reset()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+                
+
+                <script type="text/javascript" src="js/shoppingList.js"></script>
                 <script>
                   function reset(){
                     localStorage.clear();
                   }
                 </script>
+              </div>
+              </div>
           </div>
+          </div> 
         </div>
-      </div>
-      </div> 
-    </div>
   </body>
 </html>
