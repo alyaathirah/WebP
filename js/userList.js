@@ -34,7 +34,7 @@ function Login(){
             }
     }
 
-    if(email==null || password == null){
+    if(email=="" || password == ""){
         window.alert("Please fill in both fields.");
     }
     

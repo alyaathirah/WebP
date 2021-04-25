@@ -483,7 +483,7 @@
                 </div>
               <div class="modal-footer">
                 <a href="setting.html"><button type="submit" class="setting-btn rounded-pill float-end" id="Setting">Setting</button></a>
-                <a href="homepage.html" onclick="reset()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
+                <a onclick="check1()"><button type="submit" class="logout setting-btn rounded-pill" id="Logout">Logout</button>
                 <script>
                   function reset(){
                     localStorage.clear();
@@ -494,5 +494,28 @@
           </div>
           </div> 
         </div>
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="Status" aria-hidden="true">
+          <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="Status" style="color: #a82c21;"><strong>Notification</strong> </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" style="color: black;">
+              You have successfully logged out!
+              </div>
+              <div class="modal-footer">
+                  <a href="homepage.html">
+                      <button type="button" class="btn" style="background-color:  maroon; color: white; "onclick="reset()">Done</button>
+                  </a>    
+              </div>
+          </div>
+          </div>
+        </div>
+        <script>
+          function check1(){
+          $('#exampleModal3').modal('show');
+      }
+        </script>
   </body>
 </html>

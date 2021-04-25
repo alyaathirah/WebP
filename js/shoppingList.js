@@ -56,16 +56,32 @@ var vegFruit = [{link:"images/products/Vegetables and Fruits/apple.png", name: "
                 {link:"images/products/Vegetables and Fruits/strawberry.png", name: "Strawberry", price: 10.99, inCart: 0},
                 {link:"images/products/Vegetables and Fruits/watermelon.png", name: "Watermelon", price: 5.99, inCart: 0},
                 {link:"images/products/Vegetables and Fruits/broccoli.png", name: "Brocolli", price: 9.99, inCart: 0},
-                {link:"images/products/Vegetables and Fruits/cabbage.png", name: "Brocolli", price: 10.99, inCart: 0}]
+                {link:"images/products/Vegetables and Fruits/cabbage.png", name: "Cabbage", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/cauliflower.png", name: "Cauliflower", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/cucumber.png", name: "Cucumber", price: 12.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/garlic.png", name: "Garlic", price: 9.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/kiwi.png", name: "Kiwi", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/pepper.png", name: "Pepper", price: 10.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/spinach.png", name: "Spinach", price: 12.99, inCart: 0},
+                {link:"images/products/Vegetables and Fruits/tomato.png", name: "Tomato", price: 9.99, inCart: 0}]
 
 let carts = document.querySelectorAll('.btn-cart');
 
 for(let i = 0; i<carts.length; i++){
+  let loggedIn = localStorage.getItem("status");
   carts[i].addEventListener('click', () => {
-  //  console.log('clicked');
-  //  console.log(vegFruit[i]);
+    if(loggedIn){
+      $('#exampleModal').modal('toggle');
+      $('#exampleModal').modal('show');
     setItem(vegFruit[i]);
     totalCost(vegFruit[i]);
+    }
+    else{
+      $('#loginAlrertModal').modal('toggle');
+      $('#loginAlrertModal').modal('show');
+      $('#cancelbtn').hide();
+
+    }
   })
 }
 
@@ -189,7 +205,7 @@ function displayCart(){
     else if (mainList && loggedIn){
       mainList.innerHTML = '';
       mainList.innerHTML = `
-      <div class = "row md"><img src="images/happyshopping.png" alt="" width="300" height="300" class="center"/> </div> 
+      <div class = "row md"><img src="images/emptCart.png" alt="" width="300" height="300" class="center"/> </div> 
       <div class = "row md"><h5 class="center" style="font-family:Candara; color: black;">Your list is currently empty.
       Start listing your item(s) now!</h5></div><br>
       <div class="center">
