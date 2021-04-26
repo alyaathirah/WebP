@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="admin.css" />
 
     </head>
-    <body>
+    <body class="container adminBody">
         <header class="blog-header py-3" style="background-color: #f1f1f1;">
             <div class="row flex-nowrap justify-content-between align-items-center">
               <h2><div class="p-3 mb-2 bg-transparent text-dark" style="font-family:lucida handwriting;">Manage Your Products </div></h2>
@@ -31,7 +31,7 @@
                   <li class="breadcrumb-item active" aria-current="page">Instant Food</li>
                 </ol>
         </nav>      
-        <div class="container">
+        <div class="container" style="margin-top: -20px;">
             <div class="row">
                 <div class="col-2 bg-white">
                   <br><div class="d-flex align-items-start">
@@ -42,11 +42,7 @@
                             
                             <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" 
                             data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" href="Add product.html">Add Product</a>                 
-                            
-                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" 
-                            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" href="inbox.html">Inbox
-                            <span class="badge badge-warning">7</span></a>    
+                            aria-selected="false" href="Add product.html">Add Product</a>                   
                         </div>
                     </div>
                 </div>
@@ -699,8 +695,8 @@
                   <h5 class="modal-title text-dark" id="exampleModalLabel">This product will be deleted.</h5>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  <button onclick="delFunction()" type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                  <button onclick="delFunction()" type="button" class="btn btn-outline-info" data-dismiss="modal">Confirm</button>
                 </div>
               </div>
             </div>
@@ -746,7 +742,7 @@
         </div>
 
         <!-- Footer -->
-    <footer class="text-center text-lg-start bg-warning">
+    <footer class="text-center text-lg-start">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->

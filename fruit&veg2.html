@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="admin.css" />
 
     </head>
-    <body >
+    <body class="container adminBody" >
         <header class="blog-header py-3" style="background-color: #f1f1f1;">
             <div class="row flex-nowrap justify-content-between align-items-center">
               <h2><p class="p-3 mb-2 bg-transparent text-dark" style="font-family:lucida handwriting;">Manage Your Products </p></h2>
@@ -31,7 +31,7 @@
                   <li class="breadcrumb-item active" aria-current="page">Fruit and Vegetables</li>
                 </ol>
         </nav>      
-        <div class="container">
+        <div class="container" style="margin-top: -20px;">
             <div class="row">
                 <div class="col-2 bg-white">
                   <br><div class="d-flex align-items-start">
@@ -43,11 +43,6 @@
                             <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" 
                             data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
                             aria-selected="false" href="Add product.html">Add Product</a>                 
-                            
-                            <a class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" 
-                            type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false" href="message.html">Inbox
-                            <span class="badge badge-warning">7</span></a>
-                              
                         </div>
                     </div>
                 </div>
@@ -72,12 +67,12 @@
               <div id="fruitnvegs2_items"><br>
 
               <div id="item9">
-                <button type="button" class="collapsible">Cauliflower</button>
+                <button id="iname1" type="button" class="collapsible">Cauliflower</button>
                 <div class="content">
           
                   <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: rgb(255, 255, 255)" >
                     <div class="col-4 d-none d-lg-block">
-                          <br><img src="images/products/Vegetables and Fruits/cauliflower.png" style="width: 250px; height: 250px;" />
+                          <br><img id="iimage1" src="images/products/Vegetables and Fruits/cauliflower.png" style="width: 250px; height: 250px;" />
                           <br><br><div class="input-group mb-2">
                             <input type="file" class="form-control" id="inputGroupFile02">
                             <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -86,7 +81,7 @@
                       <div class="price col p-4 d-flex flex-column position-static">
                         <div class="row g-3">
                           <form class="form-floating col-sm-10">
-                            <input type="text" class="form-control col-15" id="prd_name2" placeholder="product name" value="Cauliflower">
+                            <input type="text" class="form-control col-15" id="inname1" placeholder="product name" value="Cauliflower">
                           </form>
                         </div>
                         <div class="mb-3"> 
@@ -96,35 +91,35 @@
                         <div class="mb-3 row form-inline">
                           <form class="form-floating form-inline col-sm-3 col-form-label ">
                             <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                            <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            <input id="iprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                           </form>
                           <label for="inputweight" class=" col-form-label text-dark">Weight</label>
                           <div class="input-group col-sm-3">
-                            <input type="text" class="form-control col-sm-6" id="sweight1">
-                            <select id="sunit1" class="form-select border-black" aria-label="Default select example">
+                            <input type="text" class="form-control col-sm-6" id="iweight1">
+                            <select id="iunit1" class="form-select border-black" aria-label="Default select example">
                               <option value="kg"selected>kg</option>
                               <option value="g">g</option>
                             </select>
                           </div>
                           <label for="inputStock" class=" col-form-label text-dark">Stock</label>
                           <div class="col-sm-2">
-                            <input type="number" class="form-control col-sm-12" id="sstock1">
+                            <input type="number" class="form-control col-sm-12" id="istock1">
                           </div>
                         </div> 
                         <div class="row">
                             <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
                             <div class="col-sm-4">
-                              <input type="date" class="form-control" id="inputexpDate">
+                              <input type="date" class="form-control" id="iexpDate1">
                             </div>
                             <div class="col-sm-1 form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault17" id="flexRadioDefault17">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault17" id="ilocal1">
                               <label class="form-check-label text-dark" for="flexRadioDefault17">
                                 Local
                               </label>
                             </div>
 
                             <div class="form-check form-check-inline">
-                              <input class="form-check-input" type="radio" name="flexRadioDefault18" id="flexRadioDefault18" checked>
+                              <input class="form-check-input" type="radio" name="flexRadioDefault18" id="iimported1" checked>
                               <label class="form-check-label text-dark" for="flexRadioDefault18">
                                 Imported
                               </label>
@@ -717,8 +712,8 @@
                   <h5 class="modal-title text-dark" id="exampleModalLabel">This product will be deleted.</h5>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  <button onclick="delFunction()" type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                  <button onclick="delFunction()" type="button" class="btn btn-outline-info" data-dismiss="modal">Confirm</button>
                 </div>
               </div>
             </div>
