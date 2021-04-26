@@ -321,6 +321,56 @@
     
 
        <!--End of Row of Product--> 
+
+ <!--Start of Row Product--> 
+ <div class = "row md">
+  <div class = "item" id = "item3">
+    <div class = "col-md-1">
+          <div class = "buttons">
+          <span class="deletebtn" onclick="myFunction()" id ="3"></span>
+          </div>
+      </div>
+
+      <div class = "col-md-2">
+        <div class = "images">
+        <img src="images/products/Instant Food/samyangCheese.png" alt="" width="120" height="120"/>
+        </div>
+      </div>
+
+      <div class = "col-md-3">
+        <div class = "description" id = "nameProd">
+          <span>Samyang Cheese</span>
+        </div>
+      </div>
+
+      <div class = "col-md-3">
+        <div class="quantity">
+          <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn3">
+            <img src="images/plus.svg" alt="" />
+          </button>
+          <input type="text" name="name" value="1" id = "quantity3">
+          <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn3">
+            <img src="images/minus.svg" alt="" />
+          </button>
+        </div>
+      </div>
+
+      <div class = "col-md-1">
+        <div class="total-price">RM<span id ="price3">12.99</span>
+        </div>
+      </div>
+
+      <div class = "col-md-1">
+        <div class="stock-notavail">
+          Out of Stock
+        </div>
+        </div>
+    </div>
+  </div>
+  
+
+     <!--End of Row of Product--> 
+
        <!--Total Price-->
      <div class = "sumPrice">
        <div class = "row md">
@@ -579,7 +629,7 @@
         p[i] = parseFloat(document.getElementById('price' + i).innerText);
         q[i] = parseFloat(document.getElementById('quantity' + i).value);   
         result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = "RM" + (Math.round(result * 100) / 100);
+        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
       }
 
       //add price
