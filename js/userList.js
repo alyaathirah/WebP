@@ -17,7 +17,7 @@ function Login(){
         if(email == admin[i])
             if(password == adminPass[i]){
                 localStorage.setItem("status","logged in")
-                location.assign("homepage.html");//go to homepage admin
+                location.assign("Admin/admin.html");//go to homepage admin
                 
                 return; //stop the function
             }
