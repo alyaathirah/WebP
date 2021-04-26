@@ -171,7 +171,7 @@
           </div>
           <div class="row mb-3">
           <div class="col-sm-1">
-            <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check1()">Update</button></div>
+            <button type="submit" class="submit-btn rounded-pill float-sm-end" onclick="check()">Update</button></div>
           </div>
           <div class="row mb-3">
           <label for="Password1" class="col-sm-2 col-form-label">Password</label>
@@ -386,7 +386,7 @@
         }
         
       }
-      //Update Validation
+      //Update Password Validation
       function check1(){
           $('#exampleModal3').modal('show');
       }
@@ -402,6 +402,25 @@
       //Delete Account
       function reset(){
                     localStorage.clear();
+      }
+      //Update profile message
+      function check(){
+        var FName = document.getElementById("FName").value;
+        var LName = document.getElementById("LName").value;
+        var UName = document.getElementById("Username").value;
+        var Email = document.getElementById("Email").value;
+        var PNumber = document.getElementById("PNumber").value;
+        var Birthday = document.getElementById("Birthday").value;
+        var Address = document.getElementById("Address").value;
+        var City = document.getElementById("City").value;
+        var State = document.getElementById("State").value;
+        var Zip = document.getElementById("Zip").value;
+        if( FName == "" || FName == "" || UName == "" ||Email == ""||PNumber == ""||Birthday == "" || Bio == "" || Address == "" || City == "" || State == "" || Zip == ""){
+          $('#exampleModal4').modal('show');
+        }
+        else{
+          $('#exampleModal3').modal('show');
+        }
       }
     </script>
     
