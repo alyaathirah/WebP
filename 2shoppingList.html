@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>To-Diet List</title>
+    <title>Grocery List</title>
     <link rel="icon" href="images/icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="user.css">
@@ -161,7 +161,7 @@
       <div class = "shoppingList" id = "shoppinglist2">
         <div class="row">
           <div class="col">
-            <a style="color: black;">To-Diet List</a>
+            <a style="color: black;">Grocery List</a>
           </div>
           <div class="col-md-auto">
           </div>
@@ -198,7 +198,7 @@
         <!-- Title --> 
         <div class = "col-md-9">
         <div class="titleSL">
-        To-Diet List 
+        Grocery List 
         </div>
       </div>
 
@@ -207,23 +207,14 @@
     <br>
     <div style="border: 2px solid #a7a7a7;">
     <div class = "mainList">
-    <div class = "row md" style = "border-bottom: 3px solid #E1E8EE; color: black;
-    padding-left: 40px; font-weight: 400;">
-          Product
-         <div class = "col-md-2">
-         </div>
- 
-         <div class = "col-md-3">
-         </div>
- 
-         <div class = "col-md-3">Quantity
-         </div>
- 
-         <div class = "col-md-1">
-         Price
-         </div>
-         
-   </div>
+    <div class = "row md">
+      <div class = "productHeader">
+        <h6 class = "product-title">PRODUCT</h6>
+        <h6 class = "price-title">PRICE</h6>
+        <h6 class = "quantity-title">QUANTITY</h6>
+        <h6 class = "quantity-title">SUBTOTAL</h6>
+      </div>
+    </div>
 
     <!--Start of Row Product--> 
   <div class = "row md">
@@ -241,26 +232,31 @@
           </div>
         </div>
 
-        <div class = "col-md-3">
+        <div class = "col-md-2">
           <div class = "description">
             <span id = "name">Wafer Cream</span>
           </div>
         </div>
 
+        <div class = "col-md-1">
+          <div class="total-price" id ="price1">RM5.90
+          </div>
+        </div>
+
         <div class = "col-md-3">
           <div class="quantity">
-            <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn1">
+            <button class="plus-btn button" type="button" name="button" id = "btn1">
               <img src="images/plus.svg" alt="" />
             </button>
             <input type="text" name="name" value="1" id = "quantity1">
-            <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn1">
+            <button class="minus-btn button" type="button" name="button" id = "btn1">
               <img src="images/minus.svg" alt="" />
             </button>
           </div>
         </div>
 
         <div class = "col-md-1">
-          <div class="total-price">RM<span id ="price1">5.90</span>
+          <div class="total-price" id ="subprice1">RM5.90
           </div>
         </div>
 
@@ -288,26 +284,31 @@
           </div>
         </div>
 
-        <div class = "col-md-3">
+        <div class = "col-md-2">
           <div class = "description" id = "nameProd">
             <span>Maggie Kari</span>
           </div>
         </div>
 
+        <div class = "col-md-1">
+          <div class="total-price" id ="price2">RM5.95
+          </div>
+        </div>
+
         <div class = "col-md-3">
           <div class="quantity">
-            <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn2">
+            <button class="plus-btn button" type="button" name="button" id = "btn2">
               <img src="images/plus.svg" alt="" />
             </button>
             <input type="text" name="name" value="1" id = "quantity2">
-            <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn2">
+            <button class="minus-btn button" type="button" name="button" id = "btn2">
               <img src="images/minus.svg" alt="" />
             </button>
           </div>
         </div>
 
         <div class = "col-md-1">
-          <div class="total-price">RM<span id ="price2">5.95</span>
+          <div class="total-price" id = "subprice2">RM5.95
           </div>
         </div>
 
@@ -337,26 +338,31 @@
         </div>
       </div>
 
-      <div class = "col-md-3">
+      <div class = "col-md-2">
         <div class = "description" id = "nameProd">
           <span>Samyang Cheese</span>
         </div>
       </div>
 
+      <div class = "col-md-1">
+        <div class="total-price" id = "price3">RM12.99
+        </div>
+      </div>
+
       <div class = "col-md-3">
         <div class="quantity">
-          <button class="plus-btn button" type="button" name="button" onclick="addFx(this.id)" id = "btn3">
+          <button class="plus-btn button" type="button" name="button" id = "btn3">
             <img src="images/plus.svg" alt="" />
           </button>
           <input type="text" name="name" value="1" id = "quantity3">
-          <button class="minus-btn button" type="button" name="button" onclick="minusFx(this.id)" id = "btn3">
+          <button class="minus-btn button" type="button" name="button" id = "btn3">
             <img src="images/minus.svg" alt="" />
           </button>
         </div>
       </div>
 
       <div class = "col-md-1">
-        <div class="total-price">RM<span id ="price3">12.99</span>
+        <div class="total-price" id="subprice3">RM12.99
         </div>
       </div>
 
@@ -372,25 +378,13 @@
      <!--End of Row of Product--> 
 
        <!--Total Price-->
-     <div class = "sumPrice">
-       <div class = "row md">
-          <div class = "col-md-1">
-            </div>
-    
-            <div class = "col-md-2">
-            </div>
-    
-            <div class = "col-md-3">
-            </div>
-    
-            <div class = "col-md-3">
-            Total Price
-            </div>
-            
-            <div class = "col-md-1" id = "sumPrice">
-            </div>
-        </div>
+     <div class = "row md">
+       <div class="productFooter">
+         <h6 class = "sumPrice-title">TOTAL PRICE</h6>
+         <h6>RM </h6><h6 class = "sumPrice"></h6>
+       </div>
       </div>
+
     </div>
   </div>
     </div>
@@ -554,6 +548,7 @@
 
     <!-- JS for Shopping List -->
     <script>
+      total();
          //modal addSL
       $(document).ready(function(){
           $("#editForm").hide();
@@ -569,13 +564,12 @@
               $("#btn").show();
           });
       });
-      //like button
-      $('.like-btn').on('click', function() {
-      $(this).toggleClass('is-active'); });
-
+  
       //minus button
       $('.minus-btn').on('click', function(e) {
       e.preventDefault();
+      var id = event.target.id;
+      id = parseInt(id.replace( /^\D+/g, ''));
       var $this = $(this);
       var $input = $this.closest('div').find('input');
       var value = parseInt($input.val());
@@ -583,17 +577,20 @@
       if (value > 1) {
       value = value - 1;
       } 
-      else if(value = null && value == 0) {
+      else if(value == 0) {
       //disabled if 0
       value = 1;
       }
 
       $input.val(value);
+      console.log(id, value);
+      subtotal(id, value);
       });
 
       //plus button
       $('.plus-btn').on('click', function(e) {
       e.preventDefault();
+      var id = parseInt(this.id.replace( /^\D+/g, ''));
       var $this = $(this);
       var $input = $this.closest('div').find('input');
       var value = parseInt($input.val());
@@ -606,72 +603,55 @@
       }
 
       $input.val(value); 
+      console.log(id, value);
+      subtotal(id, value);
       });
 
       //Delete Item
       function myFunction() {
         var buttonID = "item" + event.srcElement.id;
-        console.log(buttonID);
         var myobj = document.getElementById(buttonID);
-        p= parseInt(document.getElementById('price' + event.srcElement.id).innerText);
-        q= parseInt(document.getElementById('quantity' + event.srcElement.id).value);   
-        removeItemCost(p,q);
+        var subID = "subprice" + event.srcElement.id;
+        //document.getElementById(subID).innerText = 0;
+        total2(subID);
         myobj.remove();
       }
     
       //calculate price
 
-      //initial price
-      var p = [];
-      var q = [];
-      var result = 0;
-      for(var i = 1; i<10; i++){
-        p[i] = parseFloat(document.getElementById('price' + i).innerText);
-        q[i] = parseFloat(document.getElementById('quantity' + i).value);   
-        result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
+      function subtotal(id, value){
+        var priceID = "price" + id;
+        var price = parseFloat((document.getElementById(priceID).innerText).replace( /^\D+/g, ''));
+        var subtotal = price * value;
+        subtotal = subtotal.toFixed(2);
+        console.log(subtotal);
+        var subID = "subprice" + id;
+        document.getElementById(subID).innerText = "RM" + subtotal;
+        total();
       }
 
-      //add price
-      function addFx(elem){
-      var p = [];
-      var q = [];
-      var result = 0;
-      elem = parseInt(elem.slice(-1));
-      for(var i = 1; i<10; i++){
-        p[i] = parseFloat(document.getElementById('price' + i).innerText);
-        q[i] = parseFloat(document.getElementById('quantity' + i).value);   
-          if(i == elem){
-            q[i]+=1;
-          }
-        result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
+      function total(){
+        var product = document.getElementsByClassName("item");
+        var total = 0;
+        console.log(product);
+        for(var i = 1; i<product.length+1; i++){
+          var id = "subprice" + i;
+          var sub = parseFloat((document.getElementById(id).innerText).replace( /^\D+/g, ''));
+          console.log(i, sub);
+          total = total + sub;
         }
-      }   
+        
+        total = total.toFixed(2);
+        document.getElementsByClassName("sumPrice")[0].innerText = total; 
+      }
 
-      //minus price
-      function minusFx(elem){
-      var p = [];
-      var q = [];
-      var result = 0;
-      elem = parseInt(elem.slice(-1));
-      for(var i = 1; i<10; i++){
-        p[i] = parseFloat(document.getElementById('price' + i).innerText);
-        q[i] = parseFloat(document.getElementById('quantity' + i).value);   
-          if(i == elem){
-            q[i]-=1;
-          }
-        result = result + p[i]*(q[i]);
-        document.getElementById("sumPrice").innerHTML = (Math.round(result * 100) / 100);
-      }
-      }
-              
-      //removeitem price
-      function removeItemCost(p,q){
-      var minus = p*q;
-      var curResult =  parseFloat(document.getElementById("sumPrice").innerHTML);
-      document.getElementById("sumPrice").innerHTML = curResult - minus;
-      }
+     function total2(id){
+       var price = parseFloat((document.getElementById(id).innerText).replace( /^\D+/g, ''));
+       var sum = parseFloat(document.getElementsByClassName("sumPrice")[0].innerText);
+       sum = sum-price;
+       sum = sum.toFixed(2);
+       document.getElementsByClassName("sumPrice")[0].innerText = sum; 
+     }
 
       //------------------------JS for Modal----------------------------//
 

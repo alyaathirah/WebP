@@ -30,7 +30,7 @@
       var id = 3; 
       function addSL(){
         var input = document.getElementById("input").value;
-        var old = document.getElementById("shoppinglist1");
+        var old = document.getElementById("shoppinglist2");
         var newDiv = old.cloneNode(true);
         newDiv.id = "shoppinglist" + id;
         newDiv.querySelector(".deletebtn").id = id;
@@ -116,7 +116,7 @@ function setItem(product){
 function totalCost(product) {
   let cartCost = localStorage.getItem('totalCost');
   if(cartCost != null){
-      cartCost = parseInt(cartCost);
+      cartCost = parseFloat(cartCost);
       localStorage.setItem("totalCost", cartCost + product.price);
   } else {
       localStorage.setItem("totalCost", product.price);
@@ -131,10 +131,10 @@ function displayCart(){
   let productContainer = document.querySelector(".appendList");
   let loggedIn = localStorage.getItem("status");
   let total = parseFloat(localStorage.getItem('totalCost'));
+  total = total.toFixed(2);
     if(cartItems && productContainer){
       productContainer.innerHTML = '';
       Object.values(cartItems).map(item => {
-        var id = 1;
         productContainer.innerHTML += `
         <br>
         <div class = "row md">
@@ -150,9 +150,14 @@ function displayCart(){
               </div>
             </div>
     
-            <div class = "col-md-3">
+            <div class = "col-md-2">
               <div class = "description" id = "nameProd">
                 <span>${item.name}</span>
+              </div>
+            </div>
+
+            <div class = "col-md-1">
+              <div class="total-price" id = "price1">RM ${item.price} 
               </div>
             </div>
     
@@ -179,28 +184,14 @@ function displayCart(){
             </div>
               </div>
               </div>`
-              id = id+1;
       });
       productContainer.innerHTML+= `
-      <div class = "sumPrice">
-       <div class = "row md">
-          <div class = "col-md-1">
-            </div>
-    
-            <div class = "col-md-2">
-            </div>
-    
-            <div class = "col-md-3">
-            </div>
-    
-            <div class = "col-md-3">
-            Total Price
-            </div>
-            
-            <div class = "col-md-1" id = "sumPrice">RM${total} 
-            </div>
-        </div>
-      </div>`;
+      <div class = "row md">
+      <div class="productFooter" id ="extra">
+        <h6 class = "sumPrice-title">TOTAL PRICE</h6>
+        <h6>RM </h6><h6 class = "sumPrice">${total}</h6>
+      </div>
+     </div>`;
     }
     else if (mainList && loggedIn){
       mainList.innerHTML = '';

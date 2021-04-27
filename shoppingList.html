@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="user.css">
     <link rel="stylesheet" href="css/styleShoppingList.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <script type="text/javascript" src="js/product_page.js"></script>
-    <script type="text/javascript" src="js/project_desc.js"></script>
-    <script async type="text/javascript" src="js/shoppingList.js"></script>-->
 
   </head>
   <body class="container">
@@ -153,18 +150,13 @@
           <div class="col-md-auto">
             
           </div>
-
-          <div class="col col-lg-2">
-            <div class="deletebtn" id = "1" onClick = "myFunction2()"></div>
-          </div>
-
         </div>
       </div>
 
       <div class = "shoppingList" id = "shoppinglist2">
         <div class="row">
           <div class="col">
-            <a href="2shoppingList.html" style="color: black;">To-Diet List</a>
+            <a href="2shoppingList.html" style="color: black;"><div id = "titleList">Grocery List</div></a>
           </div>
           <div class="col-md-auto">
           </div>
@@ -210,14 +202,14 @@
     <br>
     <div style="border: 2px solid #a7a7a7;">
     <div class = "mainList">
-    <div class = "row md" style = "border-bottom: 3px solid #E1E8EE; color: black;
-    padding-left: 40px; font-weight: 400;">
-          Product
-         <div class = "col-md-2"></div>
-         <div class = "col-md-3"></div>
-         <div class = "col-md-3">Quantity</div>
-         <div class = "col-md-1">Price</div>    
-   </div>
+      <div class = "row md">
+        <div class = "productHeader">
+          <h6 class = "product-title">PRODUCT</h6>
+          <h6 class = "price-title">PRICE</h6>
+          <h6 class = "quantity-title">QUANTITY</h6>
+          <h6 class = "quantity-title">SUBTOTAL</h6>
+        </div>
+      </div>
 
       <div class = "appendList"></div>
     </div>

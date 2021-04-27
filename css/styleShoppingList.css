@@ -34,7 +34,7 @@
   }
   
   .description {
-    padding-top: 30px;
+    padding-top: 39px;
     margin-right: 60px;
     width: 150px;
   }
@@ -56,8 +56,9 @@
   }*/
   
   .quantity {
-    padding-top: 40px;
+    padding-top: 35px;
     margin-right: 60px;
+    margin-left: 20%;
   }
   .quantity input {
     -webkit-appearance: none;
@@ -129,14 +130,6 @@
     border-radius: 10px;
   }
 
-  .sumPrice {
-    padding: 20px 30px;
-    color: #43484D;
-    border-top: 3px solid #E1E8EE;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-weight: 600;
-  }
 
   .buttonz{
     background-color: #800808; 
@@ -145,9 +138,11 @@
     padding: 12px 16px; 
     font-size: 16px; 
     cursor: pointer; 
+    transition: 0.3s;
   }
   .buttonz:hover {
     background-color: rgb(212, 218, 236);
+    color: #000;
   }
 
   .modal-content {
@@ -216,3 +211,56 @@
       margin-right: auto;
       text-align: center;
     }
+
+    .productHeader{
+      width: 100%;
+      display: flex;
+      border-bottom: 3px solid #E1E8EE; 
+      color: black;
+    }
+
+    .product-title{
+      padding-left: 2%;
+      width: 43%;
+    }
+
+    .price-title{
+      width: 12%;
+      display: flex;
+    }
+
+    .quantity-title{
+      width: 20%;
+      display: flex;
+    }
+
+    .subprice-title{
+      width: 15%;
+      display: flex;
+    }
+
+    .productFooter{
+      width: 100%;
+      display: flex;
+      border-top: 3px solid #E1E8EE; 
+      color: black;
+      padding-top: 2%;
+      padding-left: 55%;
+    }
+
+    
+    .sumPrice-title{
+      width: 45%;
+    }
+
+    .sumPrice{
+      width: 12%;
+      display: flex;
+    }
+
+    #extra{
+      padding-left: 57%
+    }
+
+
+
