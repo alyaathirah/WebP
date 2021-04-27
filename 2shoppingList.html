@@ -157,7 +157,9 @@
       <div class = "shoppingList" id = "shoppinglist2">
         <div class="row">
           <div class="col">
-            <a style="color: black;">Grocery List</a>
+            <a style="color: black;">
+              <div id = "titleList">Grocery List</div>
+            </a>
           </div>
           <div class="col-md-auto">
           </div>
@@ -404,7 +406,10 @@
             <h5 class="text-uppercase text-dark">Company Policy</h5>
 
             <p class="text-dark">
-              This is our company policy, which is the policy of our company. This policy is for those who ask what is our policy and not for those that didnt ask.
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
+              atque ea quis molestias. Fugiat pariatur maxime quis culpa
+              corporis vitae repudiandae aliquam voluptatem veniam, est atque
+              cumque eum delectus sint!
             </p>
           </div>
           <!--Grid column-->
@@ -415,7 +420,7 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a class="text-dark">Call Us: 012-3456789</a>
+                <a class="text-dark">Call Us: 014-tekan2 x dpt</a>
               </li>
               <li>
                 <a href="#!" class="text-dark">Mail Us</a>
@@ -663,15 +668,16 @@
       var id = 3; 
       function addSL(){
         var input = document.getElementById("input").value;
-        var old = document.getElementById("shoppinglist1");
+        var old = document.getElementById("shoppinglist2");
         var newDiv = old.cloneNode(true);
         newDiv.id = "shoppinglist" + id;
         newDiv.querySelector(".deletebtn").id = id;
         newDiv.querySelector("#titleList").innerHTML = input;
         document.getElementById("newSL").appendChild(newDiv);
         id++;
-        
+        $("#editForm")[0].reset();
       }
+
       //snackbar
       function snack() {
       var x = document.getElementById("snackbar");

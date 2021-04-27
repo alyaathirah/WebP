@@ -37,7 +37,7 @@
         newDiv.querySelector("#titleList").innerHTML = input;
         document.getElementById("newSL").appendChild(newDiv);
         id++;
-        
+        $("#editForm")[0].reset();
       }
       //snackbar
       function snack() {
