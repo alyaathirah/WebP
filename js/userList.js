@@ -1,9 +1,9 @@
 
-var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "marie"];
-var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "marie"];
-var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "marie"];
-var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "marie"];
-var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "marie"];
+var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
+var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
+var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
+var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
+var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 
 var admin = ["admin", "superadmin"];
 var adminPass = ["admin", "superadmin"];
@@ -17,8 +17,7 @@ function Login(){
         if(email == admin[i])
             if(password == adminPass[i]){
                 localStorage.setItem("status","logged in")
-                location.assign("Admin/admin.html");//go to homepage admin
-                
+                location.assign("admin.html");//go to homepage admin
                 return; //stop the function
             }
     }
@@ -29,7 +28,6 @@ function Login(){
             if(password == userPass[i]){
                 localStorage.setItem("status","logged in")
                 location.assign("homepage.html");//go to homepage user
-                
                 return;//stop the function
             }
     }
