@@ -194,6 +194,7 @@ sup {
 a {
   text-decoration: none;
   background-color: transparent;
+  transition: 0.3s;
 }
 
 a:not([href]):not([class]) {
