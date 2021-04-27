@@ -7,7 +7,7 @@
 
 .product_details-img {
   max-width: 300px;
-  margin: 0 auto;
+  margin: auto 100px;
   padding-bottom: 3em;
 }
 .product_details-desc {
@@ -129,8 +129,7 @@
   margin: 0 auto;
 }
 
-.subtitle--vision 
-.subtitle--mision {
+.subtitle--vision .subtitle--mision {
   font: serif;
 }
 
@@ -259,7 +258,7 @@ img {
 }
 
 .product-name {
-  color: black ;
+  color: black;
   display: block;
   text-decoration: none;
   font-size: 1rem;

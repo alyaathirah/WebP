@@ -25,7 +25,6 @@ window.onload = function(){
     document.getElementById("product_name").innerHTML = localStorage.getItem("name_storage");
     document.getElementById("product_price").innerHTML = localStorage.getItem("price_storage");
     document.getElementById("prdimg").src = localStorage.getItem("image_storage"); 
-    alert(localStorage.getItem("name_storage"))
 }
 
 //------------------------JS for Modal----------------------------//
