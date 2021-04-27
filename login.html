@@ -40,7 +40,7 @@
         <!-- Trigger/Open The Modal -->
         <p>
           Need an account?
-          <span class="signUp" onclick="openModal()">Sign Up</span>
+          <span class="signUp" onclick="openModal(); clearSignUp()">Sign Up</span>
         </p>
       </div>
     </div>
@@ -144,15 +144,16 @@
       <div class="modal-content">
         <p>Sign up to know our latest deals and shop our products!</p>
         <form>
-          <br />
-          <input id="userName" placeholder="Name" />
-          <br /><br />
-          <input id="email" placeholder="Email" />
-          <br /><br />
-          <input id="userPhone" placeholder="Phone Number" />
-          <br /><br />
-          <input id="password" placeholder="Password" />
-          <br /><br />
+          
+          <label>Username:</label><br/>
+          <input id="userName" placeholder="Name" /><br/>
+          <label>Email:</label><br/>
+          <input id="userEmail" placeholder="Email" /><br/>
+          <label>Phone Number:</label><br/>
+          <input id="userPhone" placeholder="Phone Number" /><br/>
+          <label>Password:</label><br/>
+          <input id="userPassword" type="password" placeholder="Password" /><br/>
+          <br/>
           <button id="myBtn" type="button" onclick="closeModal(); SignUp()">
             Sign Up
           </button>
