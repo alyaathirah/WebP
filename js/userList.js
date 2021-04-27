@@ -1,9 +1,17 @@
 
+<<<<<<< Updated upstream
 var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
+=======
+var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
+var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
+var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
+var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
+var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
+>>>>>>> Stashed changes
 
 var admin = ["admin", "superadmin"];
 var adminPass = ["admin", "superadmin"];
@@ -35,13 +43,15 @@ function Login(){
     if(email=="" || password == ""){
         window.alert("Please fill in both fields.");
     }
-    
+
+    //window.alert("Email does not exist");
+    return;
 }
 
 function SignUp(){
     var name = $("#userName").val();  //get name value
-    var email = $("#email").val(); //get email value
-    var password = $("#password").val();  //get password value
+    var email = $("#userEmail").val(); //get email value
+    var password = $("#userPassword").val();  //get password value
     var phone = $("#userPhone").val();  //get phone value
     
 
@@ -49,7 +59,7 @@ function SignUp(){
     //1. check if the email already exists
     for(i=0; i<userEmail.length; i++){
         if(email == userEmail[i]){
-            alert("yo the email exists in the system");
+            alert("Email exists in the system");
             return;//stop the function
         }
     }
@@ -60,7 +70,15 @@ function SignUp(){
     userPass.push(password);
     userPhone.push(phone);
     
-    alert("hey sign up successful");
+    alert("Sign up successful");
 
+    return;
 
+}
+
+function clearSignUp(){
+    //$("#userName").val() = "sup";
+    //document.getElementById("#userName").innerHTML = "Johnny Bravo";
+    $("input:text").val("");
+    $("input:password").val("");
 }
