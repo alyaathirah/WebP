@@ -6,16 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <title>Admin - Snacks</title>
+        <title>Admin - Instant Food</title>
         <link rel="icon" href="images/icon.png" type="image/x-icon" />
         <link rel="stylesheet" href="bootstrap.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="admin.css" />
-        <script type="text/javascript" src="productpage.js"></script>
 
     </head>
-    <body >
-        <header class="container blog-header py-3" style="background-color: #f1f1f1;">
+    <body class="container adminBody">
+        <header class="blog-header py-3" style="background-color: #f1f1f1;">
             <div class="row flex-nowrap justify-content-between align-items-center">
               <h2><div class="p-3 mb-2 bg-transparent text-dark" style="font-family:lucida handwriting;">Manage Your Products </div></h2>
               <div class="col-4 text-center">
@@ -24,15 +23,15 @@
               </div>
             </div>
         </header>
-        <nav class="container" aria-label="breadcrumb">            
+        <nav aria-label="breadcrumb">            
                 <ol class="breadcrumb" style="background-color: #ffe508;">
                   <li class="breadcrumb-item" aria-current="page">Your Products</li>
                   <li class="breadcrumb-item"><a href="admin.html">Categories</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Edit Product</li>
-                  <li class="breadcrumb-item active" aria-current="page">Snacks</li>
+                  <li class="breadcrumb-item active" aria-current="page">Edit Product</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Instant Food</li>
                 </ol>
         </nav>      
-        <div class="container">
+        <div class="container" style="margin-top: -20px;">
             <div class="row">
                 <div class="col-2 bg-white">
                   <br><div class="d-flex align-items-start">
@@ -43,17 +42,13 @@
                             
                             <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" 
                             data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" href="Add product.html">Add Product</a>                 
-                            
-                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" 
-                            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" href="inbox.html">Inbox
-                            <span class="badge badge-warning">7</span></a>    
+                            aria-selected="false" href="Add product.html">Add Product</a>                   
                         </div>
                     </div>
                 </div>
         <main class="col-10">
           <br><form class="form-inline">
-            <h5 class="text-dark align-items-center">Snacks</h5> 
+            <h5 class="text-dark align-items-center">Instant Food</h5> 
             <div class="col-5">
                 <input
                   class="form-control mr-sm-1"
@@ -67,17 +62,17 @@
             </div>
           </form>
 
-      <div>
+          <div><br>
 
-        <div id="snacks_items1"><br>
+            <div id="instantfoods2_items">
 
-        <div id="item1">
-          <button id="iname1" type="button" class="collapsible">Wafer Cream</button>
-          <div class="content">
+            <div id="item1">
+              <button id="iname1" type="button" class="collapsible">Maggi Ayam</button>
+              <div class="content">
           
             <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
               <div class="col-4 d-none d-lg-block">
-                <br><img id="iimage1" src="images/products/Snacks/apolloWaferCream.png" style="width: 250px; height: 250px" />
+                <br><img id="iimage1" src="images/products/Instant Food/maggiAyam.png" style="width: 250px; height: 250px" />
                 <br><br><div class="input-group mb-2">
                   <input src="" type="file" class="form-control" >
                   <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -86,7 +81,7 @@
             <div class="price col p-4 d-flex flex-column position-static">
               <div class="row g-3">
                 <form class="form-floating col-sm-10">
-                  <input type="text" class="form-control col-15" id="inname1" placeholder="product name" value="Wafer Cream">
+                  <input type="text" class="form-control col-15" id="inname1" placeholder="product name" value="Maggi Ayam">
                 </form>
               </div>
               <div class="mb-3"> 
@@ -145,15 +140,15 @@
             </div>            
             </div>
           </div> 
-        </div>
+            </div>
 
-        <div id="item2">
-        <button type="button" class="collapsible">Grilled Seaweed</button>
+            <div id="item2">
+              <button type="button" class="collapsible">Maggi Cup</button>
         <div class="content">
         
           <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
             <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/bigBangGrilledSeaweed.png" style="width: 250px; height: 250px" />
+              <br><img src="images/products/Instant Food/maggiCup.png" style="width: 250px; height: 250px" />
               <br><br><div class="input-group mb-2">
                 <input type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -162,7 +157,7 @@
           <div class="price col p-4 d-flex flex-column position-static">
             <div class="row g-3">
               <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name2" placeholder="product name" value="Grilled Seaweed">
+                <input type="text" class="form-control col-15" id="prd_name2" placeholder="product name" value="Maggi Cup">
               </form>
             </div>
             <div class="mb-3"> 
@@ -221,15 +216,16 @@
           </div>   
           </div>            
         </div>
-        </div>
-        
-        <div id="item3">
-        <button type="button" class="collapsible">Cheetos</button>
+                 
+            </div>
+
+            <div id="item3">
+              <button type="button" class="collapsible">Maggi Tomyam</button>
         <div class="content">
         
           <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
             <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/cheetosFlamingHot.png" style="width: 250px; height: 250px" />
+              <br><img src="images/products/Instant Food/maggiTomyam.png" style="width: 250px; height: 250px" />
               <br><br><div class="input-group mb-2">
                 <input type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -238,7 +234,7 @@
           <div class="price col p-4 d-flex flex-column position-static">
             <div class="row g-3">
               <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name3" placeholder="product name" value="Cheetos">
+                <input type="text" class="form-control col-15" id="prd_name3" placeholder="product name" value="Maggi Tomyam">
               </form>
             </div>
             <div class="mb-3"> 
@@ -297,168 +293,169 @@
           </div>   
           </div>            
         </div>
-        </div>
-        
-        <div  id="item4">
-        <button type="button" class="collapsible">Choki Choki</button>
-        <div class="content">
-        
-          <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
-            <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/chokiChoki.png" style="width: 250px; height: 250px" />
-              <br><br><div class="input-group mb-2">
-                <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Change Image</label>
-              </div>
-            </div>
-          <div class="price col p-4 d-flex flex-column position-static">
-            <div class="row g-3">
-              <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name4" placeholder="product name" value="Choki Choki">
-              </form>
-            </div>
-            <div class="mb-3"> 
-              <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
-              <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
-            </div>      
-            <div class="mb-3 row form-inline">
-              <form class="form-floating form-inline col-sm-3 col-form-label ">
-                <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </form>
-              <label for="inputweight" class=" col-form-label text-dark">Weight</label>
-              <div class="input-group col-sm-3">
-                <input type="text" class="form-control col-sm-6" id="sweight1">
-                <select id="sunit1" class="form-select border-black" aria-label="Default select example">
-                  <option value="kg"selected>kg</option>
-                  <option value="g">g</option>
-                </select>
-              </div>
-              <label for="inputStock" class=" col-form-label text-dark">Stock</label>
-              <div class="col-sm-2">
-                <input type="number" class="form-control col-sm-12" id="sstock1">
-              </div>
-            </div> 
-            <div class="row">
-                <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
-                <div class="col-sm-4">
-                  <input type="date" class="form-control" id="inputexpDate">
-                </div>
-                <div class="col-sm-1 form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
-                  <label class="form-check-label text-dark" for="flexRadioDefault7">
-                    Local
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" >
-                  <label class="form-check-label text-dark" for="flexRadioDefault8">
-                    Imported
-                  </label>
-                </div>
-            </div>
-            <div class="mb-3 row"></div>
-            <div class="row justify-content-between">
-              <div class="col-5 text-dark">
-                <button type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
-                <button id="4" onclick="idFunction()" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                  </svg>
-                  Delete
-                </button>
-              </div>
-            </div>               
-          </div>   
-          </div>            
-        </div>
-        </div>
-        
-        <div id="item5">
-        <button type="button" class="collapsible">Dried Fish Fillet</button>
-        <div class="content">
-        
-          <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
-            <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/dahfaDriedFishFillet.png" style="width: 250px; height: 250px" />
-              <br><br><div class="input-group mb-2">
-                <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Change Image</label>
-              </div>
-            </div>
-          <div class="price col p-4 d-flex flex-column position-static">
-            <div class="row g-3">
-              <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name5" placeholder="product name" value="Dried Fish Fillet">
-              </form>
-            </div>
-            <div class="mb-3"> 
-              <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
-              <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
-            </div>      
-            <div class="mb-3 row form-inline">
-              <form class="form-floating form-inline col-sm-3 col-form-label ">
-                <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </form>
-              <label for="inputweight" class=" col-form-label text-dark">Weight</label>
-              <div class="input-group col-sm-3">
-                <input type="text" class="form-control col-sm-6" id="sweight1">
-                <select id="sunit1" class="form-select border-black" aria-label="Default select example">
-                  <option value="kg"selected>kg</option>
-                  <option value="g">g</option>
-                </select>
-              </div>
-              <label for="inputStock" class=" col-form-label text-dark">Stock</label>
-              <div class="col-sm-2">
-                <input type="number" class="form-control col-sm-12" id="sstock1">
-              </div>
-            </div> 
-            <div class="row">
-                <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
-                <div class="col-sm-4">
-                  <input type="date" class="form-control" id="inputexpDate">
-                </div>
-                <div class="col-sm-1 form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
-                  <label class="form-check-label text-dark" for="flexRadioDefault7">
-                    Local
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" >
-                  <label class="form-check-label text-dark" for="flexRadioDefault8">
-                    Imported
-                  </label>
-                </div>
-            </div>
-            <div class="mb-3 row"></div>
-            <div class="row justify-content-between">
-              <div class="col-5 text-dark">
-                <button type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
-                <button onclick="idFunction()" id="5" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                  </svg>
-                  Delete
-                </button>
-              </div>
-            </div>               
-          </div>
-          
-          </div>            
-        </div>
-        </div>
 
-        <div id="item6">
-        <button type="button" class="collapsible">Ding Dang</button>
+            </div>
+
+            <div id="item4">
+              <button type="button" class="collapsible">Maggi Kari</button>
+              <div class="content">
+              
+                <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
+                  <div class="col-4 d-none d-lg-block">
+                    <br><img src="images/maggi.png" style="width: 250px; height: 250px" />
+                    <br><br><div class="input-group mb-2">
+                      <input type="file" class="form-control" id="inputGroupFile02">
+                      <label class="input-group-text" for="inputGroupFile02">Change Image</label>
+                    </div>
+                  </div>
+                <div class="price col p-4 d-flex flex-column position-static">
+                  <div class="row g-3">
+                    <form class="form-floating col-sm-10">
+                      <input type="text" class="form-control col-15" id="prd_name4" placeholder="product name" value="Maggi Kari">
+                    </form>
+                  </div>
+                  <div class="mb-3"> 
+                    <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
+                    <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
+                  </div>      
+                  <div class="mb-3 row form-inline">
+                    <form class="form-floating form-inline col-sm-3 col-form-label ">
+                      <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
+                      <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </form>
+                    <label for="inputweight" class=" col-form-label text-dark">Weight</label>
+                    <div class="input-group col-sm-3">
+                      <input type="text" class="form-control col-sm-6" id="sweight1">
+                      <select id="sunit1" class="form-select border-black" aria-label="Default select example">
+                        <option value="kg"selected>kg</option>
+                        <option value="g">g</option>
+                      </select>
+                    </div>
+                    <label for="inputStock" class=" col-form-label text-dark">Stock</label>
+                    <div class="col-sm-2">
+                      <input type="number" class="form-control col-sm-12" id="sstock1">
+                    </div>
+                  </div> 
+                  <div class="row">
+                      <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
+                      <div class="col-sm-4">
+                        <input type="date" class="form-control" id="inputexpDate">
+                      </div>
+                      <div class="col-sm-1 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7" checked>
+                        <label class="form-check-label text-dark" for="flexRadioDefault7">
+                          Local
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8" >
+                        <label class="form-check-label text-dark" for="flexRadioDefault8">
+                          Imported
+                        </label>
+                      </div>
+                  </div>
+                  <div class="mb-3 row"></div>
+                  <div class="row justify-content-between">
+                    <div class="col-5 text-dark">
+                      <button type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
+                      <button id="4" onclick="idFunction()" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        </svg>
+                        Delete
+                      </button>
+                    </div>
+                  </div>               
+                </div>   
+                </div>            
+              </div>
+                   
+              </div>
+
+              <div id="item5">
+                <button type="button" class="collapsible">Ramen Double</button>
+              <div class="content">
+              
+                <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
+                  <div class="col-4 d-none d-lg-block">
+                    <br><img src="images/products/Instant Food/ramenDouble.png" style="width: 250px; height: 250px" />
+                    <br><br><div class="input-group mb-2">
+                      <input type="file" class="form-control" id="inputGroupFile02">
+                      <label class="input-group-text" for="inputGroupFile02">Change Image</label>
+                    </div>
+                  </div>
+                <div class="price col p-4 d-flex flex-column position-static">
+                  <div class="row g-3">
+                    <form class="form-floating col-sm-10">
+                      <input type="text" class="form-control col-15" id="prd_name4" placeholder="product name" value="Ramen Double">
+                    </form>
+                  </div>
+                  <div class="mb-3"> 
+                    <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
+                    <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
+                  </div>      
+                  <div class="mb-3 row form-inline">
+                    <form class="form-floating form-inline col-sm-3 col-form-label ">
+                      <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
+                      <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </form>
+                    <label for="inputweight" class=" col-form-label text-dark">Weight</label>
+                    <div class="input-group col-sm-3">
+                      <input type="text" class="form-control col-sm-6" id="sweight1">
+                      <select id="sunit1" class="form-select border-black" aria-label="Default select example">
+                        <option value="kg"selected>kg</option>
+                        <option value="g">g</option>
+                      </select>
+                    </div>
+                    <label for="inputStock" class=" col-form-label text-dark">Stock</label>
+                    <div class="col-sm-2">
+                      <input type="number" class="form-control col-sm-12" id="sstock1">
+                    </div>
+                  </div> 
+                  <div class="row">
+                      <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
+                      <div class="col-sm-4">
+                        <input type="date" class="form-control" id="inputexpDate">
+                      </div>
+                      <div class="col-sm-1 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault9" id="flexRadioDefault9" checked>
+                        <label class="form-check-label text-dark" for="flexRadioDefault9">
+                          Local
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault10" id="flexRadioDefault10" >
+                        <label class="form-check-label text-dark" for="flexRadioDefault10">
+                          Imported
+                        </label>
+                      </div>
+                  </div>
+                  <div class="mb-3 row"></div>
+                  <div class="row justify-content-between">
+                    <div class="col-5 text-dark">
+                      <button type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
+                      <button id="5" onclick="idFunction()" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        </svg>
+                        Delete
+                      </button>
+                    </div>
+                  </div>               
+                </div>   
+                </div>            
+              </div>
+            </div>
+
+            <div id="item6">
+              <button type="button" class="collapsible">Samyang Carbonara</button>
         <div class="content">
         
           <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
             <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/dingDang.png" style="width: 250px; height: 250px" />
+              <br><img src="images/products/Instant Food/samyangCarbo.png" style="width: 250px; height: 250px" />
               <br><br><div class="input-group mb-2">
                 <input type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -467,7 +464,7 @@
           <div class="price col p-4 d-flex flex-column position-static">
             <div class="row g-3">
               <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name6" placeholder="product name" value="Ding Dang">
+                <input type="text" class="form-control col-15" id="prd_name6" placeholder="product name" value="Samyang Carbonara">
               </form>
             </div>
             <div class="mb-3"> 
@@ -527,16 +524,16 @@
           
           </div>            
         </div>
-        </div>
-        
-        
-        <div id="item7">
-        <button type="button" class="collapsible">HACKS candy</button>
+                  
+            </div>
+
+            <div id="item7">
+              <button type="button" class="collapsible">Samyang Cheese</button>
         <div class="content">
         
           <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
             <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/hacks.png" style="width: 250px; height: 250px" />
+              <br><img src="images/products/Instant Food/samyangCheese.png" style="width: 250px; height: 250px" />
               <br><br><div class="input-group mb-2">
                 <input type="file" class="form-control" id="inputGroupFile02">
                 <label class="input-group-text" for="inputGroupFile02">Change Image</label>
@@ -545,7 +542,7 @@
           <div class="price col p-4 d-flex flex-column position-static">
             <div class="row g-3">
               <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name7" placeholder="product name" value="HACKS candy">
+                <input type="text" class="form-control col-15" id="prd_name7" placeholder="product name" value="Samyang Cheese">
               </form>
             </div>
             <div class="mb-3"> 
@@ -605,90 +602,90 @@
           
           </div>            
         </div>
-        </div>
-        
-        <div id="item8">
-        <button type="button" class="collapsible">Haw Flakes</button>
-        <div class="content">
-        
-          <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
-            <div class="col-4 d-none d-lg-block">
-              <br><img src="images/products/Snacks/hawFlakes.png" style="width: 250px; height: 250px" />
-              <br><br><div class="input-group mb-2">
-                <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Change Image</label>
-              </div>
+     
             </div>
-          <div class="price col p-4 d-flex flex-column position-static">
-            <div class="row g-3">
-              <form class="form-floating col-sm-10">
-                <input type="text" class="form-control col-15" id="prd_name8" placeholder="product name" value="Haw Flakes">
-              </form>
-            </div>
-            <div class="mb-3"> -->
-              <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
-              <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
-            </div>      
-            <div class="mb-3 row form-inline">
-              <form class="form-floating form-inline col-sm-3 col-form-label ">
-                <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-              </form>
-              <label for="inputweight" class=" col-form-label text-dark">Weight</label>
-              <div class="input-group col-sm-3">
-                <input type="text" class="form-control col-sm-6" id="sweight1">
-                <select id="sunit1" class="form-select border-black" aria-label="Default select example">
-                  <option value="kg"selected>kg</option>
-                  <option value="g">g</option>
-                </select>
-              </div>
-              <label for="inputStock" class=" col-form-label text-dark">Stock</label>
-              <div class="col-sm-2">
-                <input type="number" class="form-control col-sm-12" id="sstock1">
-              </div>
-            </div> -->
-            <div class="row">
-                <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
-                <div class="col-sm-4">
-                  <input type="date" class="form-control" id="inputexpDate">
+
+            <div id="item8">
+              <button type="button" class="collapsible">Samyang Original</button>
+              <div class="content">
+              
+                <div class="row no-gutters overflow-hidden flex-md-row mb-4 h-md-250 position-relative" style="background-color: white" >
+                  <div class="col-4 d-none d-lg-block">
+                    <br><img src="images/products/Instant Food/samyangOri.png" style="width: 250px; height: 250px" />
+                    <br><br><div class="input-group mb-2">
+                      <input type="file" class="form-control" id="inputGroupFile02">
+                      <label class="input-group-text" for="inputGroupFile02">Change Image</label>
+                    </div>
+                  </div>
+                <div class="price col p-4 d-flex flex-column position-static">
+                  <div class="row g-3">
+                    <form class="form-floating col-sm-10">
+                      <input type="text" class="form-control col-15" id="prd_name8" placeholder="product name" value="Samyang Original">
+                    </form>
+                  </div>
+                  <div class="mb-3"> -->
+                    <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
+                    <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
+                  </div>      
+                  <div class="mb-3 row form-inline">
+                    <form class="form-floating form-inline col-sm-3 col-form-label ">
+                      <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
+                      <input id="sprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </form>
+                    <label for="inputweight" class=" col-form-label text-dark">Weight</label>
+                    <div class="input-group col-sm-3">
+                      <input type="text" class="form-control col-sm-6" id="sweight1">
+                      <select id="sunit1" class="form-select border-black" aria-label="Default select example">
+                        <option value="kg"selected>kg</option>
+                        <option value="g">g</option>
+                      </select>
+                    </div>
+                    <label for="inputStock" class=" col-form-label text-dark">Stock</label>
+                    <div class="col-sm-2">
+                      <input type="number" class="form-control col-sm-12" id="sstock1">
+                    </div>
+                  </div> -->
+                  <div class="row">
+                      <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
+                      <div class="col-sm-4">
+                        <input type="date" class="form-control" id="inputexpDate">
+                      </div>
+                      <div class="col-sm-1 form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15" checked>
+                        <label class="form-check-label text-dark" for="flexRadioDefault15">
+                          Local
+                        </label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault16" >
+                        <label class="form-check-label text-dark" for="flexRadioDefault16">
+                          Imported
+                        </label>
+                      </div>
+                  </div>
+                  <div class="mb-3 row"></div>
+                  <div class="row justify-content-between">
+                    <div class="col-5 text-dark">
+                      <button id="updatebtn" type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
+                      <button id="8" onclick="idFunction()" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                          <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                          <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+                        </svg>
+                        Delete
+                      </button>
+                    </div>
+                  </div>               
                 </div>
-                <div class="col-sm-1 form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault15" checked>
-                  <label class="form-check-label text-dark" for="flexRadioDefault15">
-                    Local
-                  </label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault16" >
-                  <label class="form-check-label text-dark" for="flexRadioDefault16">
-                    Imported
-                  </label>
-                </div>
-            </div>
-            <div class="mb-3 row"></div>
-            <div class="row justify-content-between">
-              <div class="col-5 text-dark">
-                <button id="updatebtn" type="button" class="btn btn-outline-warning col-sm-5 text-uppercase">Update</button>
-                <button id="8" onclick="idFunction()" type="button" class="btn btn-outline-danger"  data-toggle="modal" data-target="#exampleModal">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                  </svg>
-                  Delete
-                </button>
-              </div>
-            </div>               
+                </div>            
+              </div>    
+     
+            </div><br>
+
           </div>
-          </div>            
-        </div>    
-        </div>
 
-
-          </div>
-
-
-          <!--Modal Delete Product-->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+           <!--Modal Delete Product-->
+           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-header justify-content-center">
@@ -698,8 +695,8 @@
                   <h5 class="modal-title text-dark" id="exampleModalLabel">This product will be deleted.</h5>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                  <button onclick="delFunction()" type="button" class="btn btn-primary" data-dismiss="modal">Confirm</button>
+                  <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                  <button onclick="delFunction()" type="button" class="btn btn-outline-info" data-dismiss="modal">Confirm</button>
                 </div>
               </div>
             </div>
@@ -724,20 +721,20 @@
 
             <button onclick="del()">Delete</button>
 
-              <br><div class="col-11">
+            <div class="col-11">
                 <nav aria-label="Page navigation">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item justify-content-center"><a class="page-link" href="snacks1.html">1</a></li>
-                    <li class="page-item justify-content-center">
-                      <a class="page-link justify-content-center" href="snacks2.html" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
+                    <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="instantfood1.html" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        </a>
                     </li>
-                  </ul>
+                    <li class="page-item"><a class="page-link" href="instantfood2.html">2</a></li>
+                    </ul>
                 </nav>
-              </div>
+            </div>
       
-      </div>  
+          </div>  
             
             
         </main>
@@ -834,21 +831,19 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- Footer -->       
-
-      <script
+    <!-- Footer -->
+    <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"
-      ></script>
-      <script
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
-      ></script>
+    ></script>       
+    
+    <script type="text/javascript" src="adminproduct.js"></script>
 
-     
-
-      <script type="text/javascript" src="adminproduct.js"></script>
     </body>
 </html>

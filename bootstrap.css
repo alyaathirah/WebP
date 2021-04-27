@@ -4601,7 +4601,7 @@ input[type="button"].btn-block {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #007bff;
+  background-color: #800808;
 }
 
 .nav-fill > .nav-link,
@@ -4610,6 +4610,7 @@ input[type="button"].btn-block {
   flex: 1 1 auto;
   text-align: center;
 }
+
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
   -ms-flex-preferred-size: 0;

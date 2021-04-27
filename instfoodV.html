@@ -6,14 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-          <title id="page_title">Fruits and Vegetables</title>
+          <title id="page_title">Instant Food</title>
           <link rel="icon" href="images/icon.png" type="image/x-icon" />
           <link rel="stylesheet" href="bootstrap.css" />
-          <script type="text/javascript" src="productpage.js"></script>
+          <script type="text/javascript" src="js/product_page.js"></script>
           <link rel="stylesheet" href="css/style.css" />
-          <!--<link rel="stylesheet" href="user.css">-->
+          <link rel="stylesheet" href="admin.css" />
     </head>
-    <body class="container">
+    <body class="container adminBody">
         <header class="blog-header py-3" style="background-color: #f1f1f1;">
             <div class="row flex-nowrap justify-content-between align-items-center">
               <h2><div class="p-3 mb-2 bg-transparent text-dark" style="font-family:lucida handwriting;">Manage Your Products </div></h2>
@@ -25,15 +25,15 @@
         </header>
         
         <nav aria-label="breadcrumb">            
-                <ol class="breadcrumb " style="background-color: #ffe508;">
-                  <li class="breadcrumb-item" aria-current="page">Your Products</li>
-                  <li class="breadcrumb-item"><a href="admin.html">Categories</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">View</li>
-                  <li class="breadcrumb-item active" aria-current="page">Fruit and Vegetables</li>
-                </ol>
+          <ol class="breadcrumb " style="background-color: #ffe508;">
+            <li class="breadcrumb-item" aria-current="page">Your Products</li>
+            <li class="breadcrumb-item"><a href="admin.html">Categories</a></li>
+            <li class="breadcrumb-item active" aria-current="page">View</li>
+            <li class="breadcrumb-item active" aria-current="page">Instant Food</li>
+          </ol>
         </nav>
            
-       <div class="container">
+       <div class="container" style="margin-top: -20px;">
             <div class="row">
                 <div class="col-2 bg-white">
                     <br><div class="d-flex align-items-start">
@@ -44,18 +44,14 @@
                             
                             <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" 
                             data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" href="Add product.html">Add Product</a>                 
-                            
-                            <a class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" 
-                            type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false" href="inbox.html">Inbox
-                            <span class="badge badge-warning">7</span></a>    
+                            aria-selected="false" href="Add product.html">Add Product</a>               
                         </div>
                     </div>
                 </div>
         <!--Start of Main-->
     <main class="col-10">
       <form class="form-inline">
-        <h5 style="color: black; font: 21 em sans-serif;" class="pb-4 pt-4">Fruits and Vegetables</h5>
+        <h5 class="text-dark pb-4 pt-4">Instant Food</h5>
         <div class="col-5">
           <input
             class="form-control mr-sm-1"
@@ -63,7 +59,7 @@
             placeholder="Search..."
             aria-label="Search"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0 border-info" type="submit">
+          <button class="btn btn-outline-success my-2 my-sm-0 border-danger" type="submit">
             Search
           </button>
         </div>
@@ -71,7 +67,7 @@
   
         <div class="row md-0">
   
-          <br><div class="col-md-3">
+          <div class="col-md-3">
             <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative" style="background-color: white" >
               <div class="col-auto d-none d-lg-block">
                 <img id="prdimg1" style="width: 100%; height: 250px" />
@@ -98,7 +94,7 @@
                 <div id="prd_price2" class="mb-1"></div>
                 <div class="row">
                   <div class="col-md-7">
-                    <a id="link" href="view item.html" onclick='clickfunc()' class="stretched-link">View Item</a>
+                    <a id="link" href="#" class="stretched-link">View Item</a>
                   </div>
                 </div>
               </div>
@@ -384,7 +380,6 @@
                         </div>
                       </div>
                 </div>
-                
           </div>
       </main>
       <!--End of Main-->  
@@ -393,7 +388,7 @@
         </div>
         
         <!-- Footer -->
-    <footer class="text-center text-lg-start bg-warning">
+    <footer class="text-center text-lg-start">
       <!-- Grid container -->
       <div class="container p-4">
         <!--Grid row-->

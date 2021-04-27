@@ -21,13 +21,10 @@
 
         var unit = localStorage.getItem("pdUnit");
         if(unit == "kg"){
-          alert("kg");
           cloneditem.querySelector("#iunit1").value = unit;
         }else{
           cloneditem.querySelector("#iunit1").value = "g";
         }
-
-
     
       if(category=="Snacks"){
         //SNACKS   
@@ -38,7 +35,7 @@
         document.getElementById("fruitnvegs_items1").appendChild(cloneditem);
         console.log(cloneditem);
       }else if(category=="Instant Food"){
-        //Instant Food
+        //INSTANT FOOD
         document.getElementById("instantfoods_items1").appendChild(cloneditem);
         console.log(cloneditem);
       }
@@ -59,6 +56,7 @@
    });
  }
 
+ //delete item
  function delFunction() {
   var id = localStorage.getItem("iddel");
   var buttonID = "item" + id;
@@ -73,4 +71,19 @@ localStorage.setItem("iddel",event.srcElement.id);
 
 function del(){
 window.localStorage.clear();
+}
+
+//clear input field
+function clear(){
+  document.getElementById('new_prod').value = '';
+  document.getElementById('new_category').value = '';
+  document.getElementById('new_Price').value = '';
+  document.getElementById('productDesc').value = '';
+  document.getElementById('new_Weight').value = '';
+  document.getElementById('new_unit').value = '';
+  document.getElementById('new_Stock').value = '';
+  document.getElementById('new_expDate').value = '';
+  document.getElementById('new_Local').value = '';
+  document.getElementById('new_Imported').value = '';
+  document.getElementById('test4').value = '';
 }
