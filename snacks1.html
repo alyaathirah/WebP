@@ -84,16 +84,16 @@
               </div>
               <div class="mb-3"> 
                 <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
-                <textarea class="form-control col-sm-10" id="idesc1" rows="3"></textarea>
+                <textarea class="form-control col-sm-10" id="idesc1" rows="3">Wafers are formed from flour and water dispersions (batter) with small amounts of fat, sugar, salt and sodium bicarbonate</textarea>
               </div>      
               <div class="mb-3 row form-inline">
                 <form class="form-floating form-inline col-sm-3 col-form-label ">
                   <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                  <input id="iprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                  <input id="iprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="2.30">
                 </form>
                 <label for="inputweight" class=" col-form-label text-dark">Weight</label>
                 <div class="input-group col-sm-3">
-                  <input type="text" class="form-control col-sm-6" id="iweight1">
+                  <input type="text" class="form-control col-sm-6" id="iweight1" value="0.1">
                   <select id="iunit1" class="form-select border-black" aria-label="Default select example">
                     <option value="kg"selected>kg</option>
                     <option value="g">g</option>
@@ -101,13 +101,13 @@
                 </div>
                 <label for="inputStock" class=" col-form-label text-dark">Stock</label>
                 <div class="col-sm-2">
-                  <input type="number" class="form-control col-sm-12" id="istock1">
+                  <input type="number" class="form-control col-sm-12" id="istock1" value="200">
                 </div>
               </div> 
               <div class="row">
                   <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
                   <div class="col-sm-4">
-                    <input type="date" class="form-control" id="iexpDate1">
+                    <input type="date" class="form-control" id="iexpDate1" value="2121-12-21">
                   </div>
                   <div class="col-sm-1 form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="ilocal1" >
@@ -715,8 +715,6 @@
             </div>
           </div>
 
-            <button onclick="del()">Delete</button>
-
               <br><div class="col-11">
                 <nav aria-label="Page navigation">
                   <ul class="pagination justify-content-center">
@@ -748,10 +746,7 @@
             <h5 class="text-uppercase text-dark">Company Policy</h5>
 
             <p class="text-dark">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
-              atque ea quis molestias. Fugiat pariatur maxime quis culpa
-              corporis vitae repudiandae aliquam voluptatem veniam, est atque
-              cumque eum delectus sint!
+             This is our company policy, which is the policy of our company. This policy is for those who ask what is our policy and not for those that didnt ask.
             </p>
           </div>
           <!--Grid column-->
@@ -762,7 +757,7 @@
 
             <ul class="list-unstyled mb-0">
               <li>
-                <a href="#!" class="text-dark">Call Us</a>
+                <a href="#!" class="text-dark">Call Us: 012-3456789</a>
               </li>
               <li>
                 <a href="#!" class="text-dark">Mail Us</a>

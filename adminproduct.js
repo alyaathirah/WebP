@@ -69,9 +69,6 @@ function idFunction(){
 localStorage.setItem("iddel",event.srcElement.id);
 }
 
-function del(){
-window.localStorage.clear();
-}
 
 //clear input field
 function clear(){

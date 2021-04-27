@@ -83,16 +83,16 @@
                     </div>
                     <div class="mb-3"> 
                       <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
-                      <textarea class="form-control col-sm-10" id="idesc1" rows="3"></textarea>
+                      <textarea class="form-control col-sm-10" id="idesc1" rows="3">A fruit that fell on Newton's head a long time ago. Founder of gravity</textarea>
                     </div>      
                     <div class="mb-3 row form-inline">
                       <form class="form-floating form-inline col-sm-3 col-form-label ">
                         <span class="input-group-text col-5" id="inputGroup-sizing-default">RM</span>
-                        <input id="iprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="iprice1" type="text" class="form-control col-sm-5" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" value="10.99">
                       </form>
                       <label for="inputweight" class=" col-form-label text-dark">Weight</label>
                       <div class="input-group col-sm-3">
-                        <input type="text" class="form-control col-sm-6" id="iweight1">
+                        <input type="text" class="form-control col-sm-6" id="iweight1" value="0.2">
                         <select id="iunit1" class="form-select border-black" aria-label="Default select example">
                           <option value="kg"selected>kg</option>
                           <option value="g">g</option>
@@ -100,13 +100,13 @@
                       </div>
                       <label for="inputStock" class=" col-form-label text-dark">Stock</label>
                       <div class="col-sm-2">
-                        <input type="number" class="form-control col-sm-12" id="istock1">
+                        <input type="number" class="form-control col-sm-12" id="istock1" value="100">
                       </div>
                     </div> 
                     <div class="row">
                         <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
                         <div class="col-sm-4">
-                          <input type="date" class="form-control" id="iexpDate1">
+                          <input type="date" class="form-control" id="iexpDate1" value="2021-12-21">
                         </div>
                         <div class="col-sm-1 form-check form-check-inline">
                           <input class="form-check-input" type="radio" name="flexRadioDefault" id="ilocal1" >
@@ -707,7 +707,6 @@
             </div>
           </div>
 
-            <button onclick="del()">Delete</button>
 
                <br><div class="col-11">
                   <nav aria-label="Page navigation">
