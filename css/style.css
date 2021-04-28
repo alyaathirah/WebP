@@ -38,9 +38,10 @@
 
 .quantity {
   display: inline-block;
+  padding-bottom: 1em;
 }
 
-.quantity .input-text.qty {
+.quantity1 .input-text.qty {
   width: 35px;
   height: 39px;
   padding: 0 5px;
@@ -49,51 +50,53 @@
   border: 1px solid #efefef;
 }
 
-.quantity.buttons_added {
-  text-align: left;
+.quantity1.buttons_added {
   position: relative;
   white-space: nowrap;
   vertical-align: top;
+  padding-bottom: 1em;
 }
 
-.quantity.buttons_added input {
+.quantity1.buttons_added input {
   display: inline-block;
   margin: 0;
   vertical-align: top;
   box-shadow: none;
 }
 
-.quantity.buttons_added .minus,
-.quantity.buttons_added .plus {
+.quantity1.buttons_added .minus,
+.quantity1.buttons_added .plus {
   padding: 7px 10px 8px;
   height: 41px;
-  background-color: #ffffff;
+  background-color: lightgrey;
   border: 1px solid #efefef;
   cursor: pointer;
+  border-radius: .25em;
 }
 
-.quantity.buttons_added .minus {
+.quantity1.buttons_added .minus {
   border-right: 0;
 }
 
-.quantity.buttons_added .plus {
+.quantity1.buttons_added .plus {
   border-left: 0;
 }
 
-.quantity.buttons_added .minus:hover,
-.quantity.buttons_added .plus:hover {
-  background: #eeeeee;
+.quantity1.buttons_added .minus:hover,
+.quantity1.buttons_added .plus:hover {
+  background: maroon;
+  color: #efefef;
 }
 
-.quantity input::-webkit-outer-spin-button,
-.quantity input::-webkit-inner-spin-button {
+.quantity1 input::-webkit-outer-spin-button,
+.quantity1 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   -moz-appearance: none;
   margin: 0;
 }
 
-.quantity.buttons_added .minus:focus,
-.quantity.buttons_added .plus:focus {
+.quantity1.buttons_added .minus:focus,
+.quantity1.buttons_added .plus:focus {
   outline: none;
 }
 
