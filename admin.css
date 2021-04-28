@@ -1,6 +1,42 @@
 .adminBody{
   background-color: #f1f1f1;
 }
+#textwhite{
+  color: white;
+}
+.admin-btn{
+  position:relative;    
+    background-image: linear-gradient(125deg,#971006, #a72879);
+    color: white;
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+    font-size: 14px;
+    padding: 8px;
+    border:none;
+    margin-top: 2%;
+    text-align: center;
+}
+.admin-btn:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.dis{
+  background-image: linear-gradient(125deg,#660a03, #641647);
+    color: white;
+    text-transform: capitalize ;
+    letter-spacing: 1px ;
+    font-size: 14px;
+    padding: 8px;
+    border:none;
+    margin-top: 2%;
+    text-align: center;
+    cursor: default;
+}
+.dis:hover {
+  color: #fff;
+  text-decoration: none;
+  cursor: default;
+}
 .productdesc{
     background-color:rgb(255, 255, 255);
     border-bottom: 2px solid black; 
@@ -18,16 +54,6 @@
     text-decoration: underline;
 }
 
-#EV {
-    color: #fff;
-    background-color: #800808;
-}
-  
-#EV:hover {
-    color: #fff;
-    background-color:#a71d2a;
-    text-decoration: underline;
-}
 
 .collapsible {
     background-color: rgb(172, 172, 172);

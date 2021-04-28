@@ -33,15 +33,18 @@
             <div class="row">
                 <div class="col-2 bg-white">
                   <br><div class="d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" 
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="true" href="admin.html">Your Products</a>         
-                            
-                            <a class="nav-link" id="v-pills-home-tab" data-bs-toggle="pill" 
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" href="Add product.html">Add Product</a>                 
-                        </div>
+                    <div class="nav flex-column nav-pills me-3" role="tablist" aria-orientation="vertical">
+                      <a class="nav-link active dis" data-bs-toggle="pill" 
+                      data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
+                      aria-selected="true" href="admin.html" disabled>Your Products</a>         
+                      
+                      <a class="nav-link admin-btn" id="textwhite" data-bs-toggle="pill" 
+                      data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
+                      aria-selected="false" href="Add product.html">Add Product</a>
+                      
+                      <a class="nav-link admin-btn" id="textwhite" type="button" role="tab" aria-controls="v-pills-home" 
+                      aria-selected="false" data-toggle="modal" data-target="#LogoutModal">Log out</a>
+                    </div>
                     </div>
                 </div>
         <main class="col-10">
@@ -54,7 +57,7 @@
                   placeholder="Search..."
                   aria-label="Search"
                 />
-                <button class="btn btn-outline-success my-2 my-sm-0 border-danger" type="submit">
+                <button class="admin-btn my-2 my-sm-0 border-danger" type="submit">
                   Search
                 </button>
             </div>
@@ -618,7 +621,7 @@
                 <input type="text" class="form-control col-15" id="prd_name8" placeholder="product name" value="Haw Flakes">
               </form>
             </div>
-            <div class="mb-3"> -->
+            <div class="mb-3">
               <label for="productDescTextarea1" class="form-label text-dark" style="padding-top: 6px;">Product Description</label>
               <textarea class="form-control col-sm-10" id="sdesc1" rows="3"></textarea>
             </div>      
@@ -639,7 +642,7 @@
               <div class="col-sm-2">
                 <input type="number" class="form-control col-sm-12" id="sstock1">
               </div>
-            </div> -->
+            </div>
             <div class="row">
                 <label for="inputexpDate" class="col-sm-2 form-label text-dark">Expiry Date</label>
                 <div class="col-sm-4">
@@ -715,6 +718,24 @@
             </div>
           </div>
 
+          <!--Modal Confirm Log out-->
+        <div class="modal fade" id="LogoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center">
+                <img src="images/logoadmin.png" style="width: 130px; height: 50px"/>       
+              </div>
+              <div class="modal-body">
+                <h5 class="modal-title text-dark" id="exampleModalLabel">Are you sure to log out?</h5>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Cancel</button>
+                <a href="login.html" type="button" class="btn btn-outline-info">Confirm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
               <br><div class="col-11">
                 <nav aria-label="Page navigation">
                   <ul class="pagination justify-content-center">
@@ -737,92 +758,17 @@
 
         <!-- Footer -->
     <footer class="text-center text-lg-start">
-      <!-- Grid container -->
+      
       <div class="container p-4">
-        <!--Grid row-->
-        <div class="row">
-          <!--Grid column-->
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-            <!--<h5 class="text-uppercase text-dark">Company Policy</h5>-->
 
-            <!--<p class="text-dark">
-             This is our company policy, which is the policy of our company. This policy is for those who ask what is our policy and not for those that didnt ask.
-            </p>-->
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <!--<h5 class="text-uppercase text-dark">Customer Support</h5>-->
-
-            <!--<ul class="list-unstyled mb-0">
-              <li>
-                <a href="#!" class="text-dark">Call Us: 012-3456789</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Mail Us</a>
-              </li>
-              <li>
-                <a class="address text-dark" style="text-decoration: none">
-                  Address: <br />
-                  Alamat, Jalan, Daerah, Poskod, Negeri, Negara.
-                </a>
-              </li>
-            </ul>-->
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <!--<h5 class="text-uppercase mb-0 text-dark">Social Media</h5>-->
-
-            <!--<ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/Facebook-logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/ig logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/twitter-logo-4.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark"
-                  ><img
-                    src="images/tiktok logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-            </ul>-->
-          </div>
-          <!--Grid column-->
-        </div>
-        <!--Grid row-->
-      </div>
-      <!-- Grid container -->
-
-      <!-- Copyright -->
-      <!--<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
         <a class="text-dark" style="font-style: italic" href="#"
           >webprogramming2021@gmail.com</a
         >
-      </div>-->
-      <!-- Copyright -->
-    </footer>
-    <!-- Footer -->       
+      </div>
+    </footer> 
+    <!-- Footer --> 
 
       <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

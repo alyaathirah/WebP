@@ -31,18 +31,18 @@
             <div class="row">
                 <div class="col-2 bg-white">
                     <br><div class="d-flex align-items-start">
-                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active " id="v-pills-home-tab" data-bs-toggle="pill" 
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="true" href="admin.html">Your Products</a>         
-                            
-                            <a class="nav-link " id="v-pills-home-tab" data-bs-toggle="pill" 
-                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" href="Add product.html">Add Product</a> 
-                            
-                            <a class="nav-link " id="v-pills-home-tab" type="button" role="tab" aria-controls="v-pills-home" 
-                            aria-selected="false" data-toggle="modal" data-target="#LogoutModal">Log out</a>
-                        </div>
+                      <div class="nav flex-column nav-pills me-3" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active dis" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
+                        aria-selected="true" href="admin.html" disabled>Your Products</a>         
+                        
+                        <a class="nav-link admin-btn" id="textwhite" data-bs-toggle="pill" 
+                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" 
+                        aria-selected="false" href="Add product.html">Add Product</a>
+                        
+                        <a class="nav-link admin-btn" id="textwhite" type="button" role="tab" aria-controls="v-pills-home" 
+                        aria-selected="false" data-toggle="modal" data-target="#LogoutModal">Log out</a>
+                      </div>
                     </div>
                 </div>
         <main class="col-10">
@@ -54,8 +54,8 @@
                             <div class="card-body">
                               <img src="images/fruit.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="...">
                               <h5 class="card-title">Fruits and Vegetables</h5>
-                              <a id="EV" href="fruit&veg1.html" class="btn border-white">Edit</a>
-                              <a id="EV" href="fru&vegV.html" class="btn border-white">View</a>
+                              <a id="EV" href="fruit&veg1.html" class="admin-btn">Edit</a>
+                              <a id="EV" href="fru&vegV.html" class="admin-btn">View</a>
                             </div>
                           </div>
                         </div>
@@ -64,8 +64,8 @@
                             <div class="card-body">
                               <img src="images/instantfood.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="...">
                               <h5 class="card-title">Instant Food</h5>
-                              <a id="EV" href="instantfood1.html" class="btn border-white">Edit</a>
-                              <a id="EV" href="instfoodV.html" class="btn border-white">View</a>
+                              <a id="EV" href="instantfood1.html" class="admin-btn">Edit</a>
+                              <a id="EV" href="instfoodV.html" class="admin-btn">View</a>
                             </div>
                           </div>
                         </div>
@@ -74,8 +74,8 @@
                             <div class="card-body">
                               <img src="images/snacks.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="...">
                               <h5 class="card-title">Snacks</h5>
-                              <a id="EV" href="snacks1.html" class="btn border-white">Edit</a>
-                              <a id="EV" href="snacksV.html" class="btn border-white">View</a>
+                              <a id="EV" href="snacks1.html" class="admin-btn">Edit</a>
+                              <a id="EV" href="snacksV.html" class="admin-btn">View</a>
                             </div>
                           </div>
                         </div>
@@ -84,8 +84,8 @@
                             <div class="card-body">
                               <img src="images/meatnseafood.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="...">
                               <h5 class="card-title">Meat and Seafood</h5>
-                              <a id="EV" href="#" class="btn border-white">Edit</a>
-                              <a id="EV" href="#" class="btn border-white">View</a>
+                              <a id="EV" href="#" class="admin-btn">Edit</a>
+                              <a id="EV" href="#" class="admin-btn">View</a>
                             </div>
                           </div>
                         </div>
@@ -94,8 +94,8 @@
                             <div class="card-body">
                               <img src="images/bakery.jpg" class="rounded-circle" style="width: 100px; height: 100px" alt="...">
                               <h5 class="card-title">Bakery and Bread</h5>
-                              <a id="EV" href="#" class="btn border-white">Edit</a>
-                              <a id="EV" href="#" class="btn border-white">View</a>
+                              <a id="EV" href="#" class="admin-btn">Edit</a>
+                              <a id="EV" href="#" class="admin-btn">View</a>
                             </div>
                           </div>
                         </div>
@@ -128,77 +128,13 @@
     <footer class="text-center text-lg-start">
       
       <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-           <!-- <h5 class="text-uppercase text-dark">Company Policy</h5>
 
-            <p class="text-dark">
-              This is our company policy, which is the policy of our company. This policy is for those who ask what is our policy and not for those that didnt ask.
-            </p>-->
-          </div>
-         
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <!--<h5 class="text-uppercase text-dark">Customer Support</h5>-->
-
-            <!--<ul class="list-unstyled mb-0">
-              <li>
-                <a class="text-dark">Call Us: 012-3456789</a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark">Mail Us</a>
-              </li>
-              <li>
-                <a class="address text-dark" style="text-decoration: none">
-                  Address: <br />
-                  Alamat, Jalan, Daerah, Poskod, Negeri, Negara.
-                </a>
-              </li>
-            </ul>-->
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <!--<h5 class="text-uppercase mb-0 text-dark">Social Media</h5>
-
-            <ul class="list-unstyled">
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/Facebook-logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/ig logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark mb-5"
-                  ><img
-                    src="images/twitter-logo-4.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-              <li>
-                <a href="#!" class="text-dark"
-                  ><img
-                    src="images/tiktok logo.png"
-                    style="width: auto; height: 30px"
-                /></a>
-              </li>
-            </ul>-->
-          </div>
-        </div>
-      </div>
-
-      <!--<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         © 2020 Copyright:
         <a class="text-dark" style="font-style: italic" href="#"
           >webprogramming2021@gmail.com</a
         >
-      </div>-->
+      </div>
     </footer> 
     <!-- Footer -->
     <script
