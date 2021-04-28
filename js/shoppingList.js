@@ -200,7 +200,7 @@ function displayCart(){
       <div class = "row md"><h5 class="center" style="font-family:Candara; color: black;">Your list is currently empty.
       Start listing your item(s) now!</h5></div><br>
       <div class="center">
-        <a href = "homepage.html"><button style = "width: 50%" class= "buttonz">Return to Shop</button></a>
+        <a href = "homepage.html"><button style = "width: 40%" class= "submit-btn rounded-pill float-sm-end">Return to Shop</button></a>
       </div><br>`;
     }
 
@@ -209,11 +209,9 @@ function displayCart(){
       mainList.innerHTML = `
       <div class = "row md"><img src="images/happyshopping.png" alt="" width="300" height="300" class="center"/> </div>
       <div class = "row md"><h5 class="center" style="font-family:Candara; color: black;">You need to login first before using our shopping list(s)!</h5></div><br>
-      <div class="center">
-        <a href = "login.html"><button style = "width: 50%; margin-bottom: 5px;" class= "buttonz">Login</button></a>
-      </div>
-      <div class="center">
-        <a href = "homepage.html"><button style = "width: 50%" class= "buttonz">Return to Shop</button></a>
+        <div class = "center">
+        <a href = "login.html"><button style = "width: 40%; margin-bottom: 5px;" class= "submit-btn rounded-pill float-sm-end">Login</button></a>
+        <a href = "homepage.html"><button style = "width: 40%" class= "submit-btn rounded-pill float-sm-end">Return to Shop</button></a>
       </div><br>`;
     }
 }
