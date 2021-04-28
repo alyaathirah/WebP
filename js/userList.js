@@ -1,17 +1,9 @@
 
-<<<<<<< Updated upstream
 var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
 var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina", "maria"];
-=======
-var userEmail = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
-var userPass = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
-var userPhone = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
-var userName = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
-var userAddress = ["alya", "mirul", "hanani", "mira", "nurul", "kina"];
->>>>>>> Stashed changes
 
 var admin = ["admin", "superadmin"];
 var adminPass = ["admin", "superadmin"];
